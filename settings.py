@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
-TIMEZONE = 'Asia/Tokyo'
+TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'zhs'
 
