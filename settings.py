@@ -5,7 +5,7 @@ TIMEZONE = 'Asia/Tokyo'
 
 DEFAULT_LANG = 'zhs'
 
-SITENAME = "Guo-min-zhi Blog"
+SITENAME = "遠方"
 AUTHOR = 'Guominzhi'
 
 DISQUS_SITENAME = ''
@@ -18,15 +18,17 @@ FEED_RSS = 'feeds/all.rss.xml'
 #DEFAULT_ORPHANS=3
 DEFAULT_PAGINATION = 10
 DELETE_OUTPUT_DIRECTORY = True
-DEFAULT_CATEGORY ='tech'
+DEFAULT_CATEGORY ='Archives'
 OUTPUT_PATH = '.'
 
 PATH = 'md-blog'
 
-LINKS = (('x-wei', 'http://x-wei.github.com'),
-		         ('farseerfc', "http://farseerfc.github.com/"),
-				                           )
+LINKS = (
+		('天堂皓月', 'http://hackecho.com/'),
+		('shikailun的日志', "http://vicdory.com/"),
+		)
 
 SOCIAL = (
-		          ('github', 'https://github.com/hyhx2008'),
-				                              )
+		('github', 'https://github.com/Guo-min-zhi'),
+		('weibo', 'http://weibo.com/ericdream'),
+		)
