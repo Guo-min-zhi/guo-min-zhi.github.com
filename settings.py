@@ -8,7 +8,7 @@ DEFAULT_LANG = 'zhs'
 SITENAME = "Guo-min-zhi Blog"
 AUTHOR = 'Guominzhi'
 
-DISQUS_SITENAME = 'hysblog'
+DISQUS_SITENAME = ''
 GITHUB_URL = 'https://github.com/Guo-min-zhi'
 SITEURL = 'http://guo-min-zhi.github.com'
 GOOGLE_ANALYTICS = 'UA-36075477-1'
