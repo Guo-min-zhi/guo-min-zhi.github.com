@@ -23,6 +23,8 @@ OUTPUT_PATH = '.'
 
 PATH = 'md-blog'
 
+THEME='./pelican-themes/bootstrap2'
+
 LINKS = (
 		('天堂皓月', 'http://hackecho.com/'),
 		('shikailun的日志', "http://vicdory.com/"),
