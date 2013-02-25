@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Guo-min-zhi Blog</title>
+        <title>My First static Blog</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
                 <link href="http://guo-min-zhi.github.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Guo-min-zhi Blog Atom Feed" />
@@ -25,16 +25,19 @@
         <header id="banner" class="body">
                 <h1><a href="./">Guo-min-zhi Blog </a></h1>
                 <nav><ul>
-                                                                                                    <li ><a href="./category/tech.html">tech</a></li>
+                                                                                                    <li class="active"><a href="./category/tech.html">tech</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
-                
-            
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./my-first-static-blog.html" rel="bookmark"
+           title="Permalink to My First static Blog">My First static Blog</a></h1>
+          </header>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="./my-first-static-blog.html">My First static Blog</a></h1> 
-                    <footer class="post-info">
+    <div class="entry-content">
+      <footer class="post-info">
         <abbr class="published" title="2013-02-25T00:00:00">
                 一 25 二月 2013
         </abbr>
@@ -44,16 +47,26 @@
         </address>
         <p>In <a href="./category/tech.html">tech</a>. </p>
 <p>tags: <a href="./tag/pelican.html">pelican</a></p>
-</footer><!-- /.post-info --><p>Hello, this is the first pelican blog, 
+</footer><!-- /.post-info -->      <p>Hello, this is the first pelican blog, 
 I use pelican because this is a very beautiful tool,
-I love this.</p><p>There are <a href="./my-first-static-blog.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
+I love this.</p>
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "my-first-static-blog.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://hysblog.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
