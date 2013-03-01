@@ -2,12 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>遠方</title><link href="http://guo-min-zhi.github.com/" rel="alternate"></link><link href="http://guo-min-zhi.github.com/feeds/Archives.atom.xml" rel="self"></link><id>http://guo-min-zhi.github.com/</id><updated>2013-02-25T00:00:00+08:00</updated><entry><title>My First static Blog</title><link href="http://guo-min-zhi.github.com/my-first-static-blog.html" rel="alternate"></link><updated>2013-02-25T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2013-02-25:my-first-static-blog.html</id><summary type="html">&lt;p&gt;Hello, this is the first pelican blog, 
 I use pelican because this is a very beautiful tool,
 I love this.&lt;/p&gt;</summary><category term="pelican"></category></entry><entry><title>Intership Ending</title><link href="http://guo-min-zhi.github.com/intership-ending.html" rel="alternate"></link><updated>2013-01-14T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2013-01-14:intership-ending.html</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;三个月的实习结束了，这种煎熬也总算暂时告一个段落了。&lt;/span&gt;
+
 &lt;span class="err"&gt;这第一次的实习用一个词总结，那就是“糟透了”。不仅申请实习的道路漫长，而且实习的内容无聊透顶，实习的工资低的可怜。&lt;/span&gt;
+
 &lt;span class="err"&gt;先说说实习人物吧。我们一共三个人，两个软件的，一个计科的，那个软件的哥们和我是一个寝室的。我们三个人签了同一份合约，来到了同一个公司，因此踏上了同一条实习道路。&lt;/span&gt;
+
 &lt;span class="err"&gt;我&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="err"&gt;月&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="err"&gt;号就来到了学校，然后和公司申请去实习，没想到公司一再拖沓，&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="err"&gt;月&lt;/span&gt;&lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="err"&gt;号总算等到了消息，然后通知说&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="err"&gt;月&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="err"&gt;号来实习，听到这个消息我是又激动又气愤呀，激动的是终于可以去实习了，气愤的是让我在学校等了一个多月。寝室那哥们比我还惨，同样是去这个公司，等了将近两个月，都可以再找一份实习了。&lt;/span&gt;
+
 &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="err"&gt;月&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="err"&gt;号满心欢喜的来到了实习公司，由于我们平台研发部的办公室还在装修，没有我们的工位，我们三个实习生被安排在了销售部的办公室里。在这个人生地不熟的办公室里，我们看公司资料、学习公司文档整整一个月。我们每一个人都有一个&lt;/span&gt;&lt;span class="n"&gt;leader&lt;/span&gt;&lt;span class="err"&gt;，他们会定期来询问我们在学习的过程中有没有碰到问题，而且会热心的帮助我们解决问题。带我的&lt;/span&gt;&lt;span class="n"&gt;leader&lt;/span&gt;&lt;span class="err"&gt;叫做田董涛，真的是非常感谢田学长啊，每次当我问问题，都会非常热心的帮我解决。&lt;/span&gt;
+
 &lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="err"&gt;月份，我们才和整个团队坐到了一个办公室里面。整个部门采用的是敏捷开发模式，每两个星期为一个&lt;/span&gt;&lt;span class="n"&gt;sprint&lt;/span&gt;&lt;span class="err"&gt;，在&lt;/span&gt;&lt;span class="n"&gt;sprint&lt;/span&gt;&lt;span class="err"&gt;开始的时候，会有计划会议，在&lt;/span&gt;&lt;span class="n"&gt;sprint&lt;/span&gt;&lt;span class="err"&gt;结束的时候，会有评审会议和回顾会议。敏捷是今年非常热的一项技术，我也参加了&lt;/span&gt;&lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="err"&gt;敏捷开发者大会，但还是第一次参与在公司性质的敏捷开发中，体会就是：敏捷开发可以对整个项目的进度进行准确的把握，但工作效率还是感觉要低一些。&lt;/span&gt;
+
 &lt;span class="err"&gt;我们三个人并没有参与到公司&lt;/span&gt;&lt;span class="n"&gt;ERP&lt;/span&gt;&lt;span class="err"&gt;的研发中，而是负责内部的敏捷开发流程系统的设计与实现。主要负责流程的管理。通过这次实习，增加了自己对于“软件开发流程”的认识，也切实体会到了公司中软件开发的生命周期。&lt;/span&gt;
+
 &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="err"&gt;月&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="err"&gt;号的时候，我们三个人一致觉得应该休息休息了，所以和经理提出请假一个多月，准备一下回家过年了。&lt;/span&gt;
+
 &lt;span class="err"&gt;那就提前祝大家节日快乐吧～～&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="intership"></category></entry></feed>
