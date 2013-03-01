@@ -10,7 +10,7 @@ DEFAULT_LANG = 'zhs'
 SITENAME = "遠方"
 AUTHOR = 'Guominzhi'
 
-DISQUS_SITENAME = ''
+DISQUS_SITENAME = 'shouwang411'
 GITHUB_URL = 'https://github.com/Guo-min-zhi'
 SITEURL = 'http://guo-min-zhi.github.com'
 GOOGLE_ANALYTICS = 'UA-36075477-1'
