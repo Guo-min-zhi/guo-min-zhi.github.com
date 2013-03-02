@@ -21,7 +21,7 @@ FEED_RSS = 'feeds/all.rss.xml'
 DEFAULT_PAGINATION = 10
 DELETE_OUTPUT_DIRECTORY = True
 DEFAULT_CATEGORY ='Archives'
-OUTPUT_PATH = '.'
+OUTPUT_PATH = './2013'
 
 PATH = 'md-blog'
 
