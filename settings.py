@@ -20,7 +20,7 @@ FEED_RSS = 'feeds/all.rss.xml'
 #DEFAULT_ORPHANS=3
 DEFAULT_PAGINATION = 10
 DELETE_OUTPUT_DIRECTORY = True
-DEFAULT_CATEGORY ='Archives, life'
+DEFAULT_CATEGORY ='Archives'
 OUTPUT_PATH = '.'
 
 PATH = 'md-blog'
