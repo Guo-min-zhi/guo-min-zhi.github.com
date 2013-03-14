@@ -11,10 +11,29 @@
 &lt;p&gt;11月份，我们才和整个团队坐到了一个办公室里面。整个部门采用的是敏捷开发模式，每两个星期为一个sprint，在sprint开始的时候，会有计划会议，在sprint结束的时候，会有评审会议和回顾会议。敏捷是今年非常热的一项技术，我也参加了2012敏捷开发者大会，但还是第一次参与在公司性质的敏捷开发中，体会就是：敏捷开发可以对整个项目的进度进行准确的把握，但工作效率还是感觉要低一些。&lt;/p&gt;
 &lt;p&gt;我们三个人并没有参与到公司ERP的研发中，而是负责内部的敏捷开发流程系统的设计与实现。主要负责流程的管理。通过这次实习，增加了自己对于“软件开发流程”的认识，也切实体会到了公司中软件开发的生命周期。&lt;/p&gt;
 &lt;p&gt;1月8号的时候，我们三个人一致觉得应该休息休息了，所以和经理提出请假一个多月，准备一下回家过年了。&lt;/p&gt;
-&lt;p&gt;那就提前祝大家节日快乐吧～～&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guominzhi</dc:creator><pubDate>Mon, 14 Jan 2013 00:00:00 +0800</pubDate><guid>tag:guo-min-zhi.github.com,2013-01-14:intership-ending.html</guid><category>intership</category></item><item><title>责任链模式</title><link>http://guo-min-zhi.github.com/ze-ren-lian-mo-shi.html</link><description>&lt;p&gt;什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
+&lt;p&gt;那就提前祝大家节日快乐吧～～&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guominzhi</dc:creator><pubDate>Mon, 14 Jan 2013 00:00:00 +0800</pubDate><guid>tag:guo-min-zhi.github.com,2013-01-14:intership-ending.html</guid><category>intership</category></item><item><title>纪念大学里最后一次小学期</title><link>http://guo-min-zhi.github.com/ji-nian-da-xue-li-zui-hou-ci-xiao-xue-qi.html</link><description>&lt;p&gt;哈哈  为期二十天的大学最后一次小学期终于结束了，虽说这个小学期无比的让人蛋疼，但收获颇多。团队里的每一位成员都很认真负责，我们共同完成了两个比较艰巨的项目，在此先感谢之。&lt;/p&gt;
+&lt;p&gt;实训一：&lt;/p&gt;
+&lt;p&gt;今晚呢，又闲来无事，突发奇想的想要统计一下这个小学期完成的代码行数，所以下了一个SourceCounter。不看不知道，一看吓一跳，直接上图：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="a.png" src="./img/a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;仅仅一个“物流管理系统”的后台代码，竟然有五千多行，加上注释等乱七八糟的东西，都到一万六了。我都不知道这些都是从哪儿里来的。可见这个代码的书写真是烂透了。&lt;/p&gt;
+&lt;p&gt;这个“物流管理系统”，虽说看着简单，但通过这个项目，收获了很多：
+&lt;em&gt;   完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~
+&lt;/em&gt;   这种看似技术简单的商业项目，其业务逻辑真的很是复杂。关于“车辆管理”、“路线管理”这些部分的业务逻辑，到现在都还不知道怎么解决。
+*   需求真的真的很重要。由于我的原因，项目一开始的时候就不是很重视需求，所以在需求分析阶段，大家草草了之。但之后问题便来了。由于大家对需求不是很清楚，在项目进行的阶段，总是开各种小会，大家一起明确需求，然后才能进行编码。真的很伤神啊！！&lt;/p&gt;
+&lt;p&gt;实训二：&lt;/p&gt;
+&lt;p&gt;实训的后十天，我们要搞一个“基于android+SSH的旅游社交软件”。android从来没搞过啊，还是蛮吓人的。但SSH之前已经很熟悉了。所以，我先给大家搭了一个SSH的后台框架，与此同时给大家一些时间去学习android。中期进展还算顺利，但到了后期，一些组员的进度落下了，并且在项目合并的时候花了很大一部分时间，导致我连刷两夜，伤不起啊！&lt;/p&gt;
+&lt;p&gt;不过，有收获就好：
+&lt;em&gt;   接触了android，首先感觉它很容易上手，但做完了之后才发现，自己做的东西真心好慢啊。android手机的内存是有限的，学会高效地管理内存，才能做出高效地软件。
+&lt;/em&gt;   会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。
+*   要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。&lt;/p&gt;
+&lt;p&gt;哈哈，show一下代码，服务器端：
+&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
+&lt;p&gt;android端：
+&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
+&lt;p&gt;其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Guominzhi</dc:creator><pubDate>Wed, 18 Jul 2012 00:00:00 +0800</pubDate><guid>tag:guo-min-zhi.github.com,2012-07-18:ji-nian-da-xue-li-zui-hou-ci-xiao-xue-qi.html</guid><category>life</category></item><item><title>责任链模式</title><link>http://guo-min-zhi.github.com/ze-ren-lian-mo-shi.html</link><description>&lt;p&gt;什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
 使用责任链模式有什么好处呢？它实现了请求的发起者和请求的处理者之间的解耦，并且可以有多个处理者，只要将请求交给处理的起始者，该请求就一定会被处理。&lt;/p&gt;
 &lt;p&gt;下面是一个责任链模式的例子(from 《大话设计模式》):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="UseCaseModel" src="./md-blog/UseCaseModel.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="UseCaseModel" src="./img/UseCaseModel.png" /&gt;&lt;/p&gt;
 &lt;p&gt;管理者抽象类：
     using System;
     using System.Collections.Generic;
