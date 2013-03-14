@@ -62,7 +62,7 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
         <div><p>什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
 使用责任链模式有什么好处呢？它实现了请求的发起者和请求的处理者之间的解耦，并且可以有多个处理者，只要将请求交给处理的起始者，该请求就一定会被处理。</p>
 <p>下面是一个责任链模式的例子(from 《大话设计模式》):</p>
-<p><img alt="UseCaseModel" src="./UseCaseModel.png" /></p>
+<p><img alt="UseCaseModel" src="./md-blog/UseCaseModel.png" /></p>
 <p>管理者抽象类：
     using System;
     using System.Collections.Generic;
@@ -103,9 +103,9 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
         <span class="p">{</span> <span class="p">}</span>
         <span class="n">public</span> <span class="n">override</span> <span class="kt">void</span> <span class="n">processRequest</span><span class="p">(</span><span class="n">Request</span> <span class="n">request</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="err">“请假”</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="s">&quot;请假&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="err">“</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span><span class="o">:</span><span class="p">{</span><span class="mi">1</span><span class="p">},{</span><span class="mi">2</span><span class="p">}</span><span class="err">天被批准</span><span class="p">.</span><span class="n">by</span><span class="p">{</span><span class="mi">3</span><span class="p">}.</span><span class="err">”</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0}:{1},{2}天被批准.by{3}.&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span>
             <span class="p">{</span>
@@ -134,9 +134,9 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
         <span class="p">{}</span>
         <span class="n">public</span> <span class="n">override</span> <span class="kt">void</span> <span class="n">processRequest</span><span class="p">(</span><span class="n">Request</span> <span class="n">request</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="err">“请假”</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="s">&quot;请假&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="err">“</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span><span class="o">:</span><span class="p">{</span><span class="mi">1</span><span class="p">},{</span><span class="mi">2</span><span class="p">}</span><span class="err">天被批准</span><span class="p">.</span><span class="n">by</span><span class="p">{</span><span class="mi">3</span><span class="p">}.</span><span class="err">”</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0}:{1},{2}天被批准.by{3}.&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span>
             <span class="p">{</span>
@@ -165,9 +165,9 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
         <span class="p">{}</span>
         <span class="n">public</span> <span class="n">override</span> <span class="kt">void</span> <span class="n">processRequest</span><span class="p">(</span><span class="n">Request</span> <span class="n">request</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="err">“请假”</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">==</span> <span class="s">&quot;请假&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="err">“</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span><span class="o">:</span><span class="p">{</span><span class="mi">1</span><span class="p">},{</span><span class="mi">2</span><span class="p">}</span><span class="err">天被批准</span><span class="p">.</span><span class="n">By</span><span class="p">{</span><span class="mi">3</span><span class="p">}</span><span class="err">”</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0}:{1},{2}天被批准.By{3}&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="k">else</span>
             <span class="p">{</span>
@@ -177,7 +177,7 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
                 <span class="p">}</span>
                 <span class="k">else</span>
                 <span class="p">{</span>
-                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="err">“</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span><span class="o">:</span><span class="p">{</span><span class="mi">1</span><span class="p">},{</span><span class="mi">2</span><span class="p">}</span><span class="err">天被拒绝！！</span><span class="n">By</span><span class="p">{</span><span class="mi">3</span><span class="p">}.</span><span class="err">”</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0}:{1},{2}天被拒绝！！By{3}.&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestType</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestContent</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">RequestNum</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
                 <span class="p">}</span>
             <span class="p">}</span>
         <span class="p">}</span>
@@ -232,30 +232,30 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
         <span class="k">static</span> <span class="kt">void</span> <span class="n">Main</span><span class="p">(</span><span class="n">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="c1">//经理</span>
-            <span class="n">Director</span> <span class="n">jingli</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Director</span><span class="p">(</span><span class="err">“经理”</span><span class="p">);</span>
+            <span class="n">Director</span> <span class="n">jingli</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Director</span><span class="p">(</span><span class="s">&quot;经理&quot;</span><span class="p">);</span>
             <span class="c1">//总监</span>
-            <span class="n">Inspector</span> <span class="n">zongjian</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Inspector</span><span class="p">(</span><span class="err">“总监”</span><span class="p">);</span>
+            <span class="n">Inspector</span> <span class="n">zongjian</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Inspector</span><span class="p">(</span><span class="s">&quot;总监&quot;</span><span class="p">);</span>
             <span class="c1">//总裁</span>
-            <span class="n">President</span> <span class="n">zongcai</span> <span class="o">=</span> <span class="n">new</span> <span class="n">President</span><span class="p">(</span><span class="err">“总裁”</span><span class="p">);</span>
+            <span class="n">President</span> <span class="n">zongcai</span> <span class="o">=</span> <span class="n">new</span> <span class="n">President</span><span class="p">(</span><span class="s">&quot;总裁&quot;</span><span class="p">);</span>
 
             <span class="n">jingli</span><span class="p">.</span><span class="n">setSuperior</span><span class="p">(</span><span class="n">zongjian</span><span class="p">);</span>
             <span class="n">zongjian</span><span class="p">.</span><span class="n">setSuperior</span><span class="p">(</span><span class="n">zongcai</span><span class="p">);</span>
 
             <span class="n">Request</span> <span class="n">req1</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Request</span><span class="p">();</span>
-            <span class="n">req1</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="err">“请假”</span><span class="p">;</span>
-            <span class="n">req1</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="err">“</span><span class="n">Eric</span><span class="err">有事请假”</span><span class="p">;</span>
+            <span class="n">req1</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="s">&quot;请假&quot;</span><span class="p">;</span>
+            <span class="n">req1</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="s">&quot;Eric有事请假&quot;</span><span class="p">;</span>
             <span class="n">req1</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
             <span class="n">jingli</span><span class="p">.</span><span class="n">processRequest</span><span class="p">(</span><span class="n">req1</span><span class="p">);</span>
 
             <span class="n">Request</span> <span class="n">req2</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Request</span><span class="p">();</span>
-            <span class="n">req2</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="err">“请假”</span><span class="p">;</span>
-            <span class="n">req2</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="err">“</span><span class="n">Lili</span><span class="err">请假”</span><span class="p">;</span>
+            <span class="n">req2</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="s">&quot;请假&quot;</span><span class="p">;</span>
+            <span class="n">req2</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="s">&quot;Lili请假&quot;</span><span class="p">;</span>
             <span class="n">req2</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
             <span class="n">jingli</span><span class="p">.</span><span class="n">processRequest</span><span class="p">(</span><span class="n">req2</span><span class="p">);</span>
 
             <span class="n">Request</span> <span class="n">req3</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Request</span><span class="p">();</span>
-            <span class="n">req3</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="err">“请假”</span><span class="p">;</span>
-            <span class="n">req3</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="err">“</span><span class="n">Guo</span><span class="err">请假”</span><span class="p">;</span>
+            <span class="n">req3</span><span class="p">.</span><span class="n">RequestType</span> <span class="o">=</span> <span class="s">&quot;请假&quot;</span><span class="p">;</span>
+            <span class="n">req3</span><span class="p">.</span><span class="n">RequestContent</span> <span class="o">=</span> <span class="s">&quot;Guo请假&quot;</span><span class="p">;</span>
             <span class="n">req3</span><span class="p">.</span><span class="n">RequestNum</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
             <span class="n">jingli</span><span class="p">.</span><span class="n">processRequest</span><span class="p">(</span><span class="n">req3</span><span class="p">);</span>
 
