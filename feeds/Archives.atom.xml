@@ -26,10 +26,10 @@
 &lt;em&gt;   接触了android，首先感觉它很容易上手，但做完了之后才发现，自己做的东西真心好慢啊。android手机的内存是有限的，学会高效地管理内存，才能做出高效地软件。
 &lt;/em&gt;   会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。
 *   要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。&lt;/p&gt;
-&lt;p&gt;哈哈，show一下代码，服务器端：
-&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
-&lt;p&gt;android端：
-&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
+&lt;p&gt;哈哈，show一下代码，服务器端：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
+&lt;p&gt;android端：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
 &lt;p&gt;其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>责任链模式</title><link href="http://guo-min-zhi.github.com/ze-ren-lian-mo-shi.html" rel="alternate"></link><updated>2012-05-13T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-05-13:ze-ren-lian-mo-shi.html</id><summary type="html">&lt;p&gt;什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
 使用责任链模式有什么好处呢？它实现了请求的发起者和请求的处理者之间的解耦，并且可以有多个处理者，只要将请求交给处理的起始者，该请求就一定会被处理。&lt;/p&gt;
 &lt;p&gt;下面是一个责任链模式的例子(from 《大话设计模式》):&lt;/p&gt;
