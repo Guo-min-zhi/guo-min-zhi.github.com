@@ -1,6 +1,6 @@
-Title: ASP.NET视图状态
+Title: 单一职责原则SRP
 Date: 2012-4-19
-Tags: Design Patterns
+Tags: Design_Patterns
 
 呵呵 其实从很早之前就开始接触设计模式了，但一直没有加以认真的思考，所以对于“设计模式”这个概念只能说是一知半解，并没有自己深入的理解。最近下定决心，开始要认真的学习设计模式了。
 
