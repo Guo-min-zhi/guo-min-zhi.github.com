@@ -113,16 +113,17 @@ by <a class="url fn" href="./author/Guominzhi.html">Guominzhi</a>
  </div>
         <div class="summary"><p>最近，公司的一个项目需要拿到第三方项目的数据，我们解决的大致思路就是Java发送HTTP GET POST请求，得到页面数据之后，用jsoup进行解析，然后入库。由于这个第三方项目需要登录，所以，我们第一次登陆请求进去之后，需要记录下cookie，下次发送请求的时候，直接把这个cookie放到header里就可以了。</p>
 <p>发送GET请求：</p>
-<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="err">“</span><span class="n">URL</span><span class="err">链接”</span><span class="p">);</span>
+<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="s">&quot;URL链接&quot;</span><span class="p">);</span>
 <span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="n">openConnection</span><span class="p">();</span>
-<span class="n">connection</span><span class="p">.</span><span class="n">setRequestProperty</span><span class="p">(</span><span class="err">“</span><span class="n">Connection</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Keep</span><span class="o">-</span><span class="n">Alive</span><span class="err">”</span><span class="p">);</span>
-<span class="n">String</span> <span class="n">returnCookie</span> <span class="o">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">getHeaderField</span><span class="p">(</span><span class="err">“</span><span class="n">Set</span><span class="o">-</span><span class="n">Cookie</span><span class="err">”</span><span class="p">);</span>
-<span class="n">String</span> <span class="n">cookie</span> <span class="o">=</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="err">“</span><span class="p">;</span><span class="err">”</span><span class="p">));</span> <span class="c1">//取得cookie</span>
+<span class="n">connection</span><span class="p">.</span><span class="n">setRequestProperty</span><span class="p">(</span><span class="s">&quot;Connection&quot;</span><span class="p">,</span> <span class="s">&quot;Keep-Alive&quot;</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">returnCookie</span> <span class="o">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">getHeaderField</span><span class="p">(</span><span class="s">&quot;Set-Cookie&quot;</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">cookie</span> <span class="o">=</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">));</span> <span class="c1">//取得cookie</span>
 </pre></div>
 
 
 <p>发送POST请求：</p>
-<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="err">“</span><span class="n">URL ...</span></pre></div> <a class="btn btn-info xsmall" href="./javafa-song-http-get-postqing-qiu.html">read more</a></div>
+<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="s">&quot;URL链接&quot;</span><span class="p">);</span>
+<span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url ...</span></pre></div> <a class="btn btn-info xsmall" href="./javafa-song-http-get-postqing-qiu.html">read more</a></div>
     </div>	
 				
     
