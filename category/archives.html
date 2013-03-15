@@ -103,6 +103,135 @@ by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
  
 
     <div class='article'>
+        <a href="../javafa-song-http-get-postqing-qiu.html"><h2>Java发送HTTP GET POST请求</h2></a>
+        <div class= "well small"> 28 Dec 2012
+
+by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+ </div>
+        <div class="summary"><p>最近，公司的一个项目需要拿到第三方项目的数据，我们解决的大致思路就是Java发送HTTP GET POST请求，得到页面数据之后，用jsoup进行解析，然后入库。由于这个第三方项目需要登录，所以，我们第一次登陆请求进去之后，需要记录下cookie，下次发送请求的时候，直接把这个cookie放到header里就可以了。</p>
+<p>发送GET请求：</p>
+<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="err">“</span><span class="n">URL</span><span class="err">链接”</span><span class="p">);</span>
+<span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="n">openConnection</span><span class="p">();</span>
+<span class="n">connection</span><span class="p">.</span><span class="n">setRequestProperty</span><span class="p">(</span><span class="err">“</span><span class="n">Connection</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Keep</span><span class="o">-</span><span class="n">Alive</span><span class="err">”</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">returnCookie</span> <span class="o">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">getHeaderField</span><span class="p">(</span><span class="err">“</span><span class="n">Set</span><span class="o">-</span><span class="n">Cookie</span><span class="err">”</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">cookie</span> <span class="o">=</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">returnCookie</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="err">“</span><span class="p">;</span><span class="err">”</span><span class="p">));</span> <span class="c1">//取得cookie</span>
+</pre></div>
+
+
+<p>发送POST请求：</p>
+<div class="codehilite"><pre><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="n">new</span> <span class="n">URL</span><span class="p">(</span><span class="err">“</span><span class="n">URL ...</span></pre></div> <a class="btn btn-info xsmall" href="../javafa-song-http-get-postqing-qiu.html">read more</a></div>
+    </div>	
+				
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="../mavenru-men.html"><h2>Maven入门</h2></a>
+        <div class= "well small"> 28 Oct 2012
+
+by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+ </div>
+        <div class="summary"><p>如何快速搭建maven项目：</p>
+<h3>1. 下载maven</h3>
+<p>解压到C:\Program Files\apache-maven-2.2.1</p>
+<h3>2. 配置Maven环境</h3>
+<p>环境变量 -&gt; 系统变量 -&gt; 新建 -&gt; M2_HOME (C:\Program Files\apache-maven-2.2.1)</p>
+<p>环境变量 -&gt; 系统变量 -&gt; 找到Path -&gt; 编辑 -&gt; ;C:\Program Files\apache-maven-2.2.1</p>
+<p>然后，打开命令提示符(cmd)，检查Maven环境是否配置成功：</p>
+<p><img alt="maven" src="./img/mvn.png" /></p>
+<h3>3.  修改Maven仓库</h3>
+<p>Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。</p>
+<p><img alt="maven1.png" src="./img/mvn1.png" /></p>
+<p>一般情况下使用默认的目录即可，如果想更改目录，直接修改<localRepository>标签中的内容即可。</p>
+<h3>4. 创建Maven项目</h3>
+<p>使用cmd进入相应的文件目录下，直接输入命令即可。</p>
+<p>创建普通项目：mvn ...</p> <a class="btn btn-info xsmall" href="../mavenru-men.html">read more</a></div>
+    </div>	
+				
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="../poj-1007.html"><h2>POJ 1007</h2></a>
+        <div class= "well small"> 26 Sep 2012
+
+by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+ </div>
+        <div class="summary"><h3>思路：</h3>
+<p>首先要理解unsortedness是什么意思，其实就是“字母倒置”的意思，有几对倒置的字母，unsortedness就是多少。求出unsortedness之后，就是一个简单的排序，冒泡搞定。</p>
+<hr />
+<h3>代码：</h3>
+<div class="codehilite"><pre><span class="cp">#include&lt;stdio.h&gt;</span>
+<span class="cp">#include&lt;string.h&gt;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+   <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">][</span><span class="mi">51</span><span class="p">];</span>
+   <span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+   <span class="kt">int</span> <span class="n">flag</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+   <span class="kt">char</span> <span class="n">temp</span><span class="p">[</span><span class="mi">51</span><span class="p">];</span>
+   <span class="kt">int</span> <span class="n">temp_int</span><span class="p">;</span>
+   <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">m</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+   <span class="k">for</span><span class="p">(</span><span class="n">i ...</span></pre></div> <a class="btn btn-info xsmall" href="../poj-1007.html">read more</a></div>
+    </div>	
+				
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="../poj-1005.html"><h2>POJ 1005</h2></a>
+        <div class= "well small"> 25 Sep 2012
+
+by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+ </div>
+        <div class="summary"><h3>思路：</h3>
+<p>只要判断坐标点所在半圆的的面积是50的多少倍，然后取天花板就可以。</p>
+<hr />
+<h3>代码：</h3>
+<div class="codehilite"><pre><span class="cp">#include&lt;stdio.h&gt;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">count</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">year</span><span class="p">;</span>
+   <span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">s</span><span class="p">;</span>
+   <span class="kt">float</span> <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415926</span><span class="p">;</span>
+
+   <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">count</span><span class="p">);</span>
+   <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+   <span class="p">{</span>
+       <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f%f&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">y</span><span class="p">);</span>
+       <span class="k">if</span><span class="p">(</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">){</span>
+           <span class="n">s</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="o">*</span><span class="n">y</span><span class="p">)</span><span class="o">*</span><span class="mf">0.5</span><span class="p">;</span>
+           <span class="n">year</span> <span class="o">=</span> <span class="n">s</span><span class="o">/</span><span class="mi">50 ...</span></pre></div> <a class="btn btn-info xsmall" href="../poj-1005.html">read more</a></div>
+    </div>	
+				
+    
+ 
+        
+
+ 
+
+    <div class='article'>
         <a href="../ji-nian-da-xue-li-zui-hou-ci-xiao-xue-qi.html"><h2>纪念大学里最后一次小学期</h2></a>
         <div class= "well small"> 18 Jul 2012
 
@@ -120,6 +249,35 @@ by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
 <em>   完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~
 </em>   这种看似技术简单的商业项目，其业务逻辑真的很是复杂。关于“车辆管理”、“路线管理”这些部分的业务逻辑，到现在都还不知道怎么解决。
 *   需求真的真的很重要。由于我的原因，项目一开始的时候就不是很重视需求，所以在需求分析阶段，大家草草了之。但之后问题便来了。由于大家对需求不是很清楚，在项目进行的阶段，总是开各种小会，大家一起明确需求，然后才能进行编码。真的很伤神啊 ...</p> <a class="btn btn-info xsmall" href="../ji-nian-da-xue-li-zui-hou-ci-xiao-xue-qi.html">read more</a></div>
+    </div>	
+				
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="../she-jiao-wang-luo-zhong-de-zheng-fa-leng-que-xiao-ying.html"><h2>社交网络中的“蒸发冷却效应”</h2></a>
+        <div class= "well small"> 07 Jun 2012
+
+by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+ </div>
+        <div class="summary"><p><em>From:  http://www.36kr.com/p/116366.html</em></p>
+<p><img alt="social-network" src="./img/social_network1.jpg" /></p>
+<p>那些最想去结交别人的人，往往是大家最不愿意去结交的人；</p>
+<p>那些最想说出自己看法的人，往往是大家最不愿意听他说的人；</p>
+<p>那些最想同别人交换名片保持联络的人，往往是大家最不希望拿出名片同他交换的人；</p>
+<p>这么说也许更清楚：</p>
+<p>最不想来参加聚会的人，正是大家都希望能来聚会的人；</p>
+<p>最不想来认识新朋友的人，正是大家最想认识的人；</p>
+<p>最不想掏出名片的人，正是大家都想与之交换名片的人；</p>
+<p>硅谷一名社交网络设计师在他的博客中提出了这样一个有趣的现象：当新成员不断涌入一个开放社团时，社团中最有价值的成员会发现社团成员平均水平的降低让自己继续呆在这里已经没有意义了，于是他们就会选择离开。这批成员的离开进一步降低了社团的价值，于是恶性循环开始了：越来越多高价值的成员选择离开，直到有一天这个社团彻底的沦陷成了一个平庸的组织。</p>
+<p>他用了一个专业的科技词汇来表述这一现象：蒸发冷却效应。蒸发冷却是指液体在蒸发成气体的过程中会吸热，从而降低周围的温度起到冷却的效果。如果你在手上擦一点酒精会感觉很凉快，就是这一道理。在社交团体中，成员的价值跟液体的温度类似，因此当温度最高的液体蒸发变成气体时（价值最高的成员离开社团），剩下的液体的平均温度就会下降（社团的平均价值会进一步降低）。</p>
+<p>造成这一现象的关键因素是开放。社团的开放意味着它对成员的加入没有选择性，如此一来最想加入社团的成员会是那些水平在社团目前平均水平之下的人，因为他们可以从社团中学到更多东西。他们的加入从长远来说必然会对团体造成不利影响。而那些相对封闭的社团能更好的应对这种问题。这种封闭团体对成员的加入有着极高的要求，一般都是采用邀请制。由于小众而又封闭 ...</p> <a class="btn btn-info xsmall" href="../she-jiao-wang-luo-zhong-de-zheng-fa-leng-que-xiao-ying.html">read more</a></div>
     </div>	
 				
     
@@ -179,133 +337,14 @@ by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
 <p>这应该是我们学习面向对象语言时就应该有深刻理解的，在设计时，遵循这条原则，可以使我们的父类与子类之间的继承关系更加优美，为我们之后的扩展与维护带来方便。</p> <a class="btn btn-info xsmall" href="../li-shi-ti-huan-yuan-ze-isp.html">read more</a></div>
     </div>	
 				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="../kai-fang-feng-bi-yuan-ze-ocp.html"><h2>开放封闭原则OCP</h2></a>
-        <div class= "well small"> 20 Apr 2012
-
-by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
- 
-
-
- </div>
-        <div class="summary"><p>今天就来说一说这个“开放封闭原则-Open Closed Principle”。</p>
-<p>OCP应该说是面向对象设计原则的核心了，因为我们做的一切都是为了这个目的。那说到底OCP是个什么意思呢？其实很简单，就是“对扩展应该开放，对修改应该关闭”。即我们设计出来的软件，如果出于需求的原因要增加功能，那么我们不应该去修改原来的代码，而是应该思考在原来的代码的基础上增加类或者模块去实现这个需求。</p>
-<p>有人可能要问了，为什么偏偏不能修改原来的代码呢？哈哈 这就要回到我们面向对象设计的原则了。我们为什么要采用面向对象设计的思想？就是为了设计出来的软件易维护、易扩展、易复用、灵活性高。如果每次改变需求、增加功能的时候都要先去读懂原来的代码，然后再去修改原来的代码，这是相当麻烦的。要知道，你所维护的项目代码很可能不是出自你自己的手，所以维护的成本非常地高。</p>
-<p>那么，我们在项目中如何去实现OCP原则呢？首先，在项目开始前，我们应该尽最大可能去充分地理解项目的需求，避免项目后期需求出现较大的变动。其次，我们应该尽量去采用一些成熟的适合的设计模式。要知道，完全符合OCP原则的项目几乎是不存在的，只能说是尽量地去符合OCP。</p>
-<p>好吧 就先说到这里吧 今后有新的理解的时候再补上~~</p> <a class="btn btn-info xsmall" href="../kai-fang-feng-bi-yuan-ze-ocp.html">read more</a></div>
-    </div>	
-				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="../dan-zhi-ze-yuan-ze-srp.html"><h2>单一职责原则SRP</h2></a>
-        <div class= "well small"> 19 Apr 2012
-
-by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
- 
-
-
- </div>
-        <div class="summary"><p>呵呵 其实从很早之前就开始接触设计模式了，但一直没有加以认真的思考，所以对于“设计模式”这个概念只能说是一知半解，并没有自己深入的理解。最近下定决心，开始要认真的学习设计模式了。</p>
-<p>这里只是我对于设计模式的一些自己的理解，并不具有权威性哈~~</p>
-<p>让我们先从面向对象设计模式的五大原则说起吧。</p>
-<p>我们最先接触的应该就是“单一职责原则-Single Responsibility Principle”了吧。这应该是最好理解的一个基本原则了。什么意思呢？就是说“对于一个类来讲，应该只有一个引起它变化的原因”，换句话讲就是每一个类应该功能单一、不应该承担过多的职责。为什么呢？因为如果一个类承担的职责过多，就等于把这些职责耦合在一起了，一个职责的变化很有可能抑制或者削弱这个类完成其他职责的能力。并且当其中的一个职责发生变化时，很可能会导致其他的职责也发生变化，这将导致整个设计的耦合性变高、可维护性变差、可复用性变差、灵活性变差等一系列缺点。</p>
-<p>其实，单一职责原则在我们生活中的应用比比皆是。例如：一个人在工作中不能承担太多的任务，否则每一项任务都可能完成不好。还有那种集各种功能于一身的手机，结果就是照相时像素不高、听音乐时音质太差，不可能每一项功能都十分出色。</p>
-<p>所以说，在平时的工作生活中，我们也应该将单一职责原则用到自己身上来，不要总是手里做着一件事、心里还想着另外一件事，结果每件事都没有完成。最好就是脚踏实地 ...</p> <a class="btn btn-info xsmall" href="../dan-zhi-ze-yuan-ze-srp.html">read more</a></div>
-    </div>	
-				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="../aspnetshi-tu-zhuang-tai.html"><h2>ASP.NET视图状态</h2></a>
-        <div class= "well small"> 10 Apr 2012
-
-by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
- 
-
-
- </div>
-        <div class="summary"><p>有这样一个应用：页面包含一个button控件和一个label控件，每次点击button控件，label控件上的值就加1。</p>
-<div class="codehilite"><pre><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;form1&quot;</span> <span class="na">runat=</span><span class="s">&quot;server&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;asp:Button</span> <span class="na">ID=</span><span class="s">&quot;Button1&quot;</span> <span class="na">runat=</span><span class="s">&quot;server&quot;</span> <span class="na">onclick=</span><span class="s">&quot;Button1_Click&quot;</span> <span class="na">Text=</span><span class="s">&quot;0&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;asp:Label</span> <span class="na">ID=</span><span class="s">&quot;Label1&quot;</span> <span class="na">runat=</span><span class="s">&quot;server&quot;</span> <span class="na">Text=</span><span class="s">&quot;0&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</pre></div>
-
-
-<hr />
-<div class="codehilite"><pre><span class="n">protected</span> <span class="kt">void</span> <span class="nf">Button1_Click</span><span class="p">(</span><span class="n">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">Button1</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="p">(</span><span class="n">Int32</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Button1</span><span class="p">.</span><span class="n">Text</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">).</span><span class="n">ToString</span><span class="p">();</span>
-    <span class="n">Label1</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="p">(</span><span class="n">Int32</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Label1 ...</span></pre></div> <a class="btn btn-info xsmall" href="../aspnetshi-tu-zhuang-tai.html">read more</a></div>
-    </div>	
-				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="../qing-ming-xiao-ji.html"><h2>清明小记</h2></a>
-        <div class= "well small"> 05 Apr 2012
-
-by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
- 
-
-
- </div>
-        <div class="summary"><p>短短的清明假期一转眼就过去了 ，今天晚上闲来无事，那就自我总结一下吧 ^_^</p>
-<p>其实，很早之前就想在这个假期出去转转，但人算赶不上天算，突然而来的项目让我只能放弃出去happy的机会了。不过，嘿嘿 下次一定要补上~~</p>
-<p>三天假期，两个整天都在和学长们呆在那个环境还算不错的会议室里。从加入这个团队以来，让我真的学到了很多的东西。第一点就是创业型的团队和在大公司里实习完全是两个不同的世界（ps：虽然本人还没有实习哈），但听一些实习的过来人说，天天闲着没事干。但在这里却不一样，一个人得当三个人的使，天天忙得不亦乐乎，所以说嘛，让自己变得更强才是王道。第二点就是让我温习以及学习了很多的web前端方面的知识，从html+css 到 javascript，再到Ajax，学习了jQuery和jQuery UI这套非常非常好用的js框架，对于Ajax的异步请求有了一个大致的认识。等过一段时间自己闲下来的时候，一定要构建一个基于Ajax异步请求的网站，用户体验非常棒。第三就是认识了很多的大牛学长们，从他们身上学到看很多过来人的经验，用博博同学的话讲就是“和大牛呆一起时间长了你也就变成大牛了”，哈哈 真的希望如此啊~~</p>
-<p>如果三天假期都关在黑屋子里的话，本人可能就疯了，幸好在假期第二天的时候过的很是悠哉。特此通报表扬一下陆小昕同学，推掉了她人的活动邀请，能在自己百忙之中抽出时间陪本人游玩，甚是感激 ...</p> <a class="btn btn-info xsmall" href="../qing-ming-xiao-ji.html">read more</a></div>
-    </div>	
-				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="../zhi-de-ji-nian-de-ri-zi.html"><h2>值得纪念的日子</h2></a>
-        <div class= "well small"> 25 Mar 2012
-
-by <a class="url fn" href="../author/Guominzhi.html">Guominzhi</a>
- 
-
-
- </div>
-        <div class="summary"><p>人的一生一定会有那么一些非常有意义并且值得纪念的日子，我想今天一定算是一天吧。因为从今天开始，我拥有了自己的独立博客。</p>
-<p>首先，需要非常地感谢一个人，<a href="http://hackecho.com/">天堂皓月</a>。因为有了他的帮助，我才理顺了开独立博客的整体思路，并且在3天的零碎时间内，买下域名，租了主机，安装了我觉得非常神奇的wordpress。</p>
-<p>我是从上个学期，也就是大三上的时候，开始有想要写博客的想法的。记得那个时候的系统级编程课上，我们有一个homework是要用autoconf和automake生成makefile，经过了几番波折，我发现在完成作业的过程中，我们付出了很多辛苦，同时也收获的很多知识，很有必要把这些琐碎的知识以及整体的学习过程记录下来，所以写博客想法也就自然而然的慢慢发芽了。</p>
-<p>我在博客园也有自己的第三方博客，但由于自己毅力不足的原因，一直没有坚持下来，满打满算一共才完成四篇文章，着实惭愧。这一次，希望自己能够坚持下来，把写博客当做一种习惯。“编程技术”和“生活点滴”是我博客的两大主栏目，因为在我看来，每个人的生活都是丰富多彩的，我们不仅要将自己在技术道路上的成长过程记录下来，也要将自己在人生道路上的精彩瞬间化作永恒。</p>
-<p>听过一句话叫做“写作能够教会人思考”，我想从今天开始，我应该学着多多总结、多多思考，记录下我这些燦爛美好的青春。</p> <a class="btn btn-info xsmall" href="../zhi-de-ji-nian-de-ri-zi.html">read more</a></div>
-    </div>	
-				
             <div class="pagination">
 <ul>
     <li class="prev disabled"><a href="#">&larr; Previous</a></li>
 
     <li class="active"><a href="../category/archives.html">1</a></li>
+    <li class=""><a href="../category/archives2.html">2</a></li>
 
-    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+    <li class="next"><a href="../category/archives2.html">Next &rarr;</a></li>
 
 </ul>
 </div>    

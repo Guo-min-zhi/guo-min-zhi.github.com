@@ -1,0 +1,30 @@
+Title: POJ 1005
+Date: 2012-9-25
+Tags: poj 数据结构
+
+### 思路：
+
+只要判断坐标点所在半圆的的面积是50的多少倍，然后取天花板就可以。
+***
+### 代码：
+
+	#include<stdio.h>
+	int main(void)
+	{
+	   int count, i, year;
+	   float x, y, s;
+	   float pi = 3.1415926;
+
+	   scanf("%d",&count);
+	   for(i=0; i<count; i++)
+	   {
+		   scanf("%f%f", &x, &y);
+		   if(y >= 0){
+		       s = pi*(x*x + y*y)*0.5;
+		       year = s/50;
+		       printf("Property %d: This property will begin eroding in year %d.\n", i+1, year+1);
+		   }
+	   }
+	   printf("END OD OUTPUT.\n");
+	   return 0;
+	}
