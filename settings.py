@@ -5,7 +5,7 @@ sys.setdefaultencoding('utf-8')
 
 TIMEZONE = 'Asia/Shanghai'
 
-DEFAULT_LANG = 'zhs'
+DEFAULT_LANG = 'en'
 
 SITENAME = "遠方"
 AUTHOR = 'Guominzhi'
@@ -39,4 +39,4 @@ SOCIAL = (
 
 ARTICLE_URL = '{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
-
+#STATIC_PATHS(['static'])
