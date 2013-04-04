@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>遠方</title>
+    <meta name="description" content="">
+    <meta name="author" content="Guominzhi">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="../../../../theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../../../theme/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../theme/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="../../../../theme/local.css" rel="stylesheet">
+    <link href="../../../../theme/pygments.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </a>
+
+        <a class="brand" href="../../../..">遠方</a>
+
+        <div class="nav-collapse">
+        <ul class="nav">
+                    
+                                </ul>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+    <div class="row">
+
+        <div class="span9">
+            <div class='article'>
+        <div class="content-title">
+            <h1>开放封闭原则OCP</h1>
+            20 Apr 2012
+
+by <a class="url fn" href="../../../../author/Guominzhi.html">Guominzhi</a>
+ 
+
+
+        </div>
+	
+        <div><p>今天就来说一说这个“开放封闭原则-Open Closed Principle”。</p>
+<p>OCP应该说是面向对象设计原则的核心了，因为我们做的一切都是为了这个目的。那说到底OCP是个什么意思呢？其实很简单，就是“对扩展应该开放，对修改应该关闭”。即我们设计出来的软件，如果出于需求的原因要增加功能，那么我们不应该去修改原来的代码，而是应该思考在原来的代码的基础上增加类或者模块去实现这个需求。</p>
+<p>有人可能要问了，为什么偏偏不能修改原来的代码呢？哈哈 这就要回到我们面向对象设计的原则了。我们为什么要采用面向对象设计的思想？就是为了设计出来的软件易维护、易扩展、易复用、灵活性高。如果每次改变需求、增加功能的时候都要先去读懂原来的代码，然后再去修改原来的代码，这是相当麻烦的。要知道，你所维护的项目代码很可能不是出自你自己的手，所以维护的成本非常地高。</p>
+<p>那么，我们在项目中如何去实现OCP原则呢？首先，在项目开始前，我们应该尽最大可能去充分地理解项目的需求，避免项目后期需求出现较大的变动。其次，我们应该尽量去采用一些成熟的适合的设计模式。要知道，完全符合OCP原则的项目几乎是不存在的，只能说是尽量地去符合OCP。</p>
+<p>好吧 就先说到这里吧 今后有新的理解的时候再补上~~</p></div>
+	
+        <hr>
+    	   
+        <h2>Comments</h2>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'guominzhi'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        <div class="span3">
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Site
+                </li>
+            
+                <li><a href="../../../../archives.html">Archives</a>
+                <li><a href="../../../../tags.html">Tags</a>
+                <li><a href="../../../../" rel="alternate">Atom feed</a></li>
+                                <li><a href="../../../../feeds/all.rss.xml" rel="alternate">RSS feed</a></li>
+                            </ul>
+            </div>
+
+
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Categories
+                </li>
+                
+                                <li><a href="../../../../category/life.html">life</a></li>
+                                <li><a href="../../../../category/technique.html">technique</a></li>
+                                <li><a href="../../../../category/tourism.html">tourism</a></li>
+                                   
+            </ul>
+            </div>
+            
+
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Links
+                </li>
+            
+                            <li><a href="http://hackecho.com/">天堂皓月</a></li>
+                            <li><a href="http://vicdory.com/">shikailun的日志</a></li>
+                        </ul>
+            </div>
+            
+
+                        <div class="social">
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Social
+                </li>
+           
+                                <li><a href="https://github.com/Guo-min-zhi">github</a></li>
+                                <li><a href="http://weibo.com/ericdream">weibo</a></li>
+                            </ul>
+            </div>
+            </div>
+            
+        </div>  
+    </div>     </div> 
+<footer>
+<br />
+<p><a href="../../../..">遠方</a> &copy; Guominzhi 2012</p>
+</footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script>var _gaq=[['_setAccount','UA-36075477-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+<a href="https://github.com/Guo-min-zhi"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+ 
+</body>
+</html>

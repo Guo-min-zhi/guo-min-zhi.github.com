@@ -9,7 +9,9 @@ DEFAULT_LANG = 'en'
 
 SITENAME = "遠方"
 AUTHOR = 'Guominzhi'
-DATE_FORMATS = {'en': '%a, %d %b %Y'}
+DATE_FORMATS = {
+	'en': '%a, %d %b %Y',
+}
 
 DISQUS_SITENAME = 'guominzhi'
 GITHUB_URL = 'https://github.com/Guo-min-zhi'
