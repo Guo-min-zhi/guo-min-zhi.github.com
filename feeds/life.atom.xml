@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>遠方</title><link href="http://guo-min-zhi.github.com/" rel="alternate"></link><link href="http://guo-min-zhi.github.com/feeds/life.atom.xml" rel="self"></link><id>http://guo-min-zhi.github.com/</id><updated>2013-03-05T00:00:00+08:00</updated><entry><title>"Bachelor"</title><link href="http://guo-min-zhi.github.com/2013/Mar/05/bachelor/" rel="alternate"></link><updated>2013-03-05T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2013-03-05:2013/Mar/05/bachelor/</id><summary type="html">&lt;p&gt;这几天刚开学，有一些闲时间，就把徐峥的《大男当婚》看完了。呵呵，故事情节很一般，就是讲了徐峥饰演的曹小强这个角色和五个女人的恋爱故事，分别陈述的，看到中间的时候还有一丝丝的无聊。但是，曹小强这个角色却给了我很深的印象，从他身上看到了很多的优点。&lt;/p&gt;
+&lt;p&gt;曹小强，&lt;strong&gt;待人真诚，热爱生活，积极工作&lt;/strong&gt;，就是这样的一个很不错的男人，在追求爱情的道路上，屡屡碰壁，直到故事的结尾，也还是没有找到属于自己的那一份爱情。他的身上其实有非常多的优点值得我们去学习，给我最深的就是他的真诚，他对待每一个人都是非常真诚，毫不掩饰自己的缺点，关心他人，为他人着想。真的，他对待每一分爱情都是付出心血的，都是奔着结婚去的，但老天就是不善待他，总是迈不进婚姻的殿堂。&lt;/p&gt;
+&lt;p&gt;曹小强有一个发小，叫黄伟业，也是一个还算不错的人物吧，有自己的爱好，热爱自由，却在婚姻面前总是怯场。他说的一句话对我印象还是很深的，就是他在自己的“绝症”好了之后说的一句话，&lt;strong&gt;“人生的每一秒都应该往死里珍惜”&lt;/strong&gt;。是啊，人生短暂，我们都应该抓紧时间，去做自己内心想做的事情。&lt;/p&gt;
+&lt;p&gt;作为程序员，其实我们的生活挺枯燥的，天天电脑面前一坐一天，时不时的加班到半夜，我们自己觉得很high，但却不经意间错过了生命中的很多美好。其实，我们也应该给自己的生活加点儿料，丰富我们这短暂而年轻的生命！&lt;/p&gt;
+&lt;p&gt;^_^晚安～～&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>Intership Ending</title><link href="http://guo-min-zhi.github.com/2013/Jan/14/intership-ending/" rel="alternate"></link><updated>2013-01-14T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2013-01-14:2013/Jan/14/intership-ending/</id><summary type="html">&lt;p&gt;三个月的实习结束了，这种煎熬也总算暂时告一个段落了。&lt;/p&gt;
+&lt;p&gt;这第一次的实习用一个词总结，那就是“糟透了”。不仅申请实习的道路漫长，而且实习的内容无聊透顶，实习的工资低的可怜。&lt;/p&gt;
+&lt;p&gt;先说说实习人物吧。我们一共三个人，两个软件的，一个计科的，那个软件的哥们和我是一个寝室的。我们三个人签了同一份合约，来到了同一个公司，因此踏上了同一条实习道路。&lt;/p&gt;
+&lt;p&gt;我8月20号就来到了学校，然后和公司申请去实习，没想到公司一再拖沓，9月26号总算等到了消息，然后通知说10月8号来实习，听到这个消息我是又激动又气愤呀，激动的是终于可以去实习了，气愤的是让我在学校等了一个多月。寝室那哥们比我还惨，同样是去这个公司，等了将近两个月，都可以再找一份实习了。&lt;/p&gt;
+&lt;p&gt;10月8号满心欢喜的来到了实习公司，由于我们平台研发部的办公室还在装修，没有我们的工位，我们三个实习生被安排在了销售部的办公室里。在这个人生地不熟的办公室里，我们看公司资料、学习公司文档整整一个月。我们每一个人都有一个leader，他们会定期来询问我们在学习的过程中有没有碰到问题，而且会热心的帮助我们解决问题。带我的leader叫做田董涛，真的是非常感谢田学长啊，每次当我问问题，都会非常热心的帮我解决。&lt;/p&gt;
+&lt;p&gt;11月份，我们才和整个团队坐到了一个办公室里面。整个部门采用的是敏捷开发模式，每两个星期为一个sprint，在sprint开始的时候，会有计划会议，在sprint结束的时候，会有评审会议和回顾会议。敏捷是今年非常热的一项技术，我也参加了2012敏捷开发者大会，但还是第一次参与在公司性质的敏捷开发中，体会就是：敏捷开发可以对整个项目的进度进行准确的把握，但工作效率还是感觉要低一些。&lt;/p&gt;
+&lt;p&gt;我们三个人并没有参与到公司ERP的研发中，而是负责内部的敏捷开发流程系统的设计与实现。主要负责流程的管理。通过这次实习，增加了自己对于“软件开发流程”的认识，也切实体会到了公司中软件开发的生命周期。&lt;/p&gt;
+&lt;p&gt;1月8号的时候，我们三个人一致觉得应该休息休息了，所以和经理提出请假一个多月，准备一下回家过年了。&lt;/p&gt;
+&lt;p&gt;那就提前祝大家节日快乐吧～～&lt;/p&gt;</summary><category term="intership"></category></entry><entry><title>纪念大学里最后一次小学期</title><link href="http://guo-min-zhi.github.com/2012/Jul/18/the-last-session-of-training/" rel="alternate"></link><updated>2012-07-18T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-07-18:2012/Jul/18/the-last-session-of-training/</id><summary type="html">&lt;p&gt;哈哈  为期二十天的大学最后一次小学期终于结束了，虽说这个小学期无比的让人蛋疼，但收获颇多。团队里的每一位成员都很认真负责，我们共同完成了两个比较艰巨的项目，在此先感谢之。&lt;/p&gt;
+&lt;p&gt;实训一：&lt;/p&gt;
+&lt;p&gt;今晚呢，又闲来无事，突发奇想的想要统计一下这个小学期完成的代码行数，所以下了一个SourceCounter。不看不知道，一看吓一跳，直接上图：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="a.png" src="./img/a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;仅仅一个“物流管理系统”的后台代码，竟然有五千多行，加上注释等乱七八糟的东西，都到一万六了。我都不知道这些都是从哪儿里来的。可见这个代码的书写真是烂透了。&lt;/p&gt;
+&lt;p&gt;这个“物流管理系统”，虽说看着简单，但通过这个项目，收获了很多：
+&lt;em&gt;   完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~
+&lt;/em&gt;   这种看似技术简单的商业项目，其业务逻辑真的很是复杂。关于“车辆管理”、“路线管理”这些部分的业务逻辑，到现在都还不知道怎么解决。
+*   需求真的真的很重要。由于我的原因，项目一开始的时候就不是很重视需求，所以在需求分析阶段，大家草草了之。但之后问题便来了。由于大家对需求不是很清楚，在项目进行的阶段，总是开各种小会，大家一起明确需求，然后才能进行编码。真的很伤神啊！！&lt;/p&gt;
+&lt;p&gt;实训二：&lt;/p&gt;
+&lt;p&gt;实训的后十天，我们要搞一个“基于android+SSH的旅游社交软件”。android从来没搞过啊，还是蛮吓人的。但SSH之前已经很熟悉了。所以，我先给大家搭了一个SSH的后台框架，与此同时给大家一些时间去学习android。中期进展还算顺利，但到了后期，一些组员的进度落下了，并且在项目合并的时候花了很大一部分时间，导致我连刷两夜，伤不起啊！&lt;/p&gt;
+&lt;p&gt;不过，有收获就好：
+&lt;em&gt;   接触了android，首先感觉它很容易上手，但做完了之后才发现，自己做的东西真心好慢啊。android手机的内存是有限的，学会高效地管理内存，才能做出高效地软件。
+&lt;/em&gt;   会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。
+*   要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。&lt;/p&gt;
+&lt;p&gt;哈哈，show一下代码，服务器端：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
+&lt;p&gt;android端：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
+&lt;p&gt;其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>清明小记</title><link href="http://guo-min-zhi.github.com/2012/Apr/05/the-tomb-sweeping-day/" rel="alternate"></link><updated>2012-04-05T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-04-05:2012/Apr/05/the-tomb-sweeping-day/</id><summary type="html">&lt;p&gt;短短的清明假期一转眼就过去了 ，今天晚上闲来无事，那就自我总结一下吧 ^_^&lt;/p&gt;
+&lt;p&gt;其实，很早之前就想在这个假期出去转转，但人算赶不上天算，突然而来的项目让我只能放弃出去happy的机会了。不过，嘿嘿 下次一定要补上~~&lt;/p&gt;
+&lt;p&gt;三天假期，两个整天都在和学长们呆在那个环境还算不错的会议室里。从加入这个团队以来，让我真的学到了很多的东西。第一点就是创业型的团队和在大公司里实习完全是两个不同的世界（ps：虽然本人还没有实习哈），但听一些实习的过来人说，天天闲着没事干。但在这里却不一样，一个人得当三个人的使，天天忙得不亦乐乎，所以说嘛，让自己变得更强才是王道。第二点就是让我温习以及学习了很多的web前端方面的知识，从html+css 到 javascript，再到Ajax，学习了jQuery和jQuery UI这套非常非常好用的js框架，对于Ajax的异步请求有了一个大致的认识。等过一段时间自己闲下来的时候，一定要构建一个基于Ajax异步请求的网站，用户体验非常棒。第三就是认识了很多的大牛学长们，从他们身上学到看很多过来人的经验，用博博同学的话讲就是“和大牛呆一起时间长了你也就变成大牛了”，哈哈 真的希望如此啊~~&lt;/p&gt;
+&lt;p&gt;如果三天假期都关在黑屋子里的话，本人可能就疯了，幸好在假期第二天的时候过的很是悠哉。特此通报表扬一下陆小昕同学，推掉了她人的活动邀请，能在自己百忙之中抽出时间陪本人游玩，甚是感激~~^_^&lt;/p&gt;
+&lt;p&gt;生活就是如此的美好，因为有你、有他、有身边每一个和你认识的人的存在，所以我们的生活才总是充满期待、充满挑战、充满幸福和欢乐。&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>值得纪念的日子</title><link href="http://guo-min-zhi.github.com/2012/Mar/25/A-Memorable-Day/" rel="alternate"></link><updated>2012-03-25T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-03-25:2012/Mar/25/A-Memorable-Day/</id><summary type="html">&lt;p&gt;人的一生一定会有那么一些非常有意义并且值得纪念的日子，我想今天一定算是一天吧。因为从今天开始，我拥有了自己的独立博客。&lt;/p&gt;
+&lt;p&gt;首先，需要非常地感谢一个人，&lt;a href="http://hackecho.com/"&gt;天堂皓月&lt;/a&gt;。因为有了他的帮助，我才理顺了开独立博客的整体思路，并且在3天的零碎时间内，买下域名，租了主机，安装了我觉得非常神奇的wordpress。&lt;/p&gt;
+&lt;p&gt;我是从上个学期，也就是大三上的时候，开始有想要写博客的想法的。记得那个时候的系统级编程课上，我们有一个homework是要用autoconf和automake生成makefile，经过了几番波折，我发现在完成作业的过程中，我们付出了很多辛苦，同时也收获的很多知识，很有必要把这些琐碎的知识以及整体的学习过程记录下来，所以写博客想法也就自然而然的慢慢发芽了。&lt;/p&gt;
+&lt;p&gt;我在博客园也有自己的第三方博客，但由于自己毅力不足的原因，一直没有坚持下来，满打满算一共才完成四篇文章，着实惭愧。这一次，希望自己能够坚持下来，把写博客当做一种习惯。“编程技术”和“生活点滴”是我博客的两大主栏目，因为在我看来，每个人的生活都是丰富多彩的，我们不仅要将自己在技术道路上的成长过程记录下来，也要将自己在人生道路上的精彩瞬间化作永恒。&lt;/p&gt;
+&lt;p&gt;听过一句话叫做“写作能够教会人思考”，我想从今天开始，我应该学着多多总结、多多思考，记录下我这些燦爛美好的青春。&lt;/p&gt;</summary><category term="life"></category></entry></feed>

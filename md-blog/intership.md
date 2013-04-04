@@ -1,6 +1,8 @@
 Date: 2013-1-14
 Title: Intership Ending
 Tags: intership
+Slug: intership-ending
+Category: life
 
 
 三个月的实习结束了，这种煎熬也总算暂时告一个段落了。

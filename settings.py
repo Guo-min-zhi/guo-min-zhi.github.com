@@ -18,7 +18,7 @@ GOOGLE_ANALYTICS = 'UA-36075477-1'
 TAG_CLOUD_STEPS = 4
 FEED_RSS = 'feeds/all.rss.xml'
 #DEFAULT_ORPHANS=3
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 DELETE_OUTPUT_DIRECTORY = True
 DEFAULT_CATEGORY ='Archives'
 OUTPUT_PATH = '.'
@@ -36,3 +36,7 @@ SOCIAL = (
 		('github', 'https://github.com/Guo-min-zhi'),
 		('weibo', 'http://weibo.com/ericdream'),
 		)
+
+ARTICLE_URL = '{date:%Y}/{date:%b}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+
