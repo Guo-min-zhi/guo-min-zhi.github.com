@@ -45,4 +45,4 @@ SOCIAL = (
 
 ARTICLE_URL = '{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
-STATIC_PATHS = (['static'])
+STATIC_PATHS = ['static',]
