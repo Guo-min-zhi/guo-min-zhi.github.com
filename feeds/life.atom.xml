@@ -14,7 +14,7 @@
 &lt;p&gt;那就提前祝大家节日快乐吧～～&lt;/p&gt;</summary><category term="intership"></category></entry><entry><title>纪念大学里最后一次小学期</title><link href="http://guo-min-zhi.github.com/2012/Jul/18/the-last-session-of-training/" rel="alternate"></link><updated>2012-07-18T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-07-18:2012/Jul/18/the-last-session-of-training/</id><summary type="html">&lt;p&gt;哈哈  为期二十天的大学最后一次小学期终于结束了，虽说这个小学期无比的让人蛋疼，但收获颇多。团队里的每一位成员都很认真负责，我们共同完成了两个比较艰巨的项目，在此先感谢之。&lt;/p&gt;
 &lt;p&gt;实训一：&lt;/p&gt;
 &lt;p&gt;今晚呢，又闲来无事，突发奇想的想要统计一下这个小学期完成的代码行数，所以下了一个SourceCounter。不看不知道，一看吓一跳，直接上图：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="a.png" src="./img/a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="a.png" src="/static/images/2012/7/a.png" /&gt;&lt;/p&gt;
 &lt;p&gt;仅仅一个“物流管理系统”的后台代码，竟然有五千多行，加上注释等乱七八糟的东西，都到一万六了。我都不知道这些都是从哪儿里来的。可见这个代码的书写真是烂透了。&lt;/p&gt;
 &lt;p&gt;这个“物流管理系统”，虽说看着简单，但通过这个项目，收获了很多：
 &lt;em&gt;   完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~
@@ -27,9 +27,9 @@
 &lt;/em&gt;   会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。
 *   要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。&lt;/p&gt;
 &lt;p&gt;哈哈，show一下代码，服务器端：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="b.png" src="/static/images/2012/7/b.png" /&gt;&lt;/p&gt;
 &lt;p&gt;android端：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="c.png" src="/static/images/2012/7/c.png" /&gt;&lt;/p&gt;
 &lt;p&gt;其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>清明小记</title><link href="http://guo-min-zhi.github.com/2012/Apr/05/the-tomb-sweeping-day/" rel="alternate"></link><updated>2012-04-05T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-04-05:2012/Apr/05/the-tomb-sweeping-day/</id><summary type="html">&lt;p&gt;短短的清明假期一转眼就过去了 ，今天晚上闲来无事，那就自我总结一下吧 ^_^&lt;/p&gt;
 &lt;p&gt;其实，很早之前就想在这个假期出去转转，但人算赶不上天算，突然而来的项目让我只能放弃出去happy的机会了。不过，嘿嘿 下次一定要补上~~&lt;/p&gt;
 &lt;p&gt;三天假期，两个整天都在和学长们呆在那个环境还算不错的会议室里。从加入这个团队以来，让我真的学到了很多的东西。第一点就是创业型的团队和在大公司里实习完全是两个不同的世界（ps：虽然本人还没有实习哈），但听一些实习的过来人说，天天闲着没事干。但在这里却不一样，一个人得当三个人的使，天天忙得不亦乐乎，所以说嘛，让自己变得更强才是王道。第二点就是让我温习以及学习了很多的web前端方面的知识，从html+css 到 javascript，再到Ajax，学习了jQuery和jQuery UI这套非常非常好用的js框架，对于Ajax的异步请求有了一个大致的认识。等过一段时间自己闲下来的时候，一定要构建一个基于Ajax异步请求的网站，用户体验非常棒。第三就是认识了很多的大牛学长们，从他们身上学到看很多过来人的经验，用博博同学的话讲就是“和大牛呆一起时间长了你也就变成大牛了”，哈哈 真的希望如此啊~~&lt;/p&gt;

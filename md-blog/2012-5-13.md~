@@ -1,6 +1,8 @@
 Title: 责任链模式
 Date: 2012-5-13
 Tags: DesignPatterns
+Slug: chain-of-responsibility
+Category: technique
 
 
 什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
@@ -8,7 +10,7 @@ Tags: DesignPatterns
 
 下面是一个责任链模式的例子(from 《大话设计模式》):
 
-![UseCaseModel](./img/UseCaseModel.png)
+![UseCaseModel](/static/images/2012/5/UseCaseModel.png)
 
 管理者抽象类：
     using System;

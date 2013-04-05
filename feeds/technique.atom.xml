@@ -44,10 +44,10 @@
 &lt;p&gt;环境变量 -&amp;gt; 系统变量 -&amp;gt; 新建 -&amp;gt; M2_HOME (C:\Program Files\apache-maven-2.2.1)&lt;/p&gt;
 &lt;p&gt;环境变量 -&amp;gt; 系统变量 -&amp;gt; 找到Path -&amp;gt; 编辑 -&amp;gt; ;C:\Program Files\apache-maven-2.2.1&lt;/p&gt;
 &lt;p&gt;然后，打开命令提示符(cmd)，检查Maven环境是否配置成功：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="maven" src="./img/mvn.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="maven" src="/static/images/2012/10/mvn.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;3.  修改Maven仓库&lt;/h3&gt;
 &lt;p&gt;Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="maven1.png" src="./img/mvn1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="maven1.png" src="/static/images/2012/10/img/mvn1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;一般情况下使用默认的目录即可，如果想更改目录，直接修改&lt;localRepository&gt;标签中的内容即可。&lt;/p&gt;
 &lt;h3&gt;4. 创建Maven项目&lt;/h3&gt;
 &lt;p&gt;使用cmd进入相应的文件目录下，直接输入命令即可。&lt;/p&gt;
@@ -128,7 +128,7 @@
    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="poj"></category><category term="数据结构"></category></entry><entry><title>社交网络中的“蒸发冷却效应”</title><link href="http://guo-min-zhi.github.com/2012/Jun/07/cooling-effect-of-social-network/" rel="alternate"></link><updated>2012-06-07T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-06-07:2012/Jun/07/cooling-effect-of-social-network/</id><summary type="html">&lt;p&gt;&lt;em&gt;From:  http://www.36kr.com/p/116366.html&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="social-network" src="./img/social_network1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="social-network" src="/static/images/2012/6/social_network1.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;那些最想去结交别人的人，往往是大家最不愿意去结交的人；&lt;/p&gt;
 &lt;p&gt;那些最想说出自己看法的人，往往是大家最不愿意听他说的人；&lt;/p&gt;
 &lt;p&gt;那些最想同别人交换名片保持联络的人，往往是大家最不希望拿出名片同他交换的人；&lt;/p&gt;
@@ -143,12 +143,12 @@
 &lt;p&gt;你猜对了，他们去了自己的封闭“私人”社团。在那儿，他们可以同跟自己水平相近的朋友进行真正的社交，比如开一个下午的专业研讨会没有几个人听得懂，于是来的人没有闲杂人等，不易发生“蒸发冷却”的惨剧。&lt;/p&gt;
 &lt;p&gt;蒸发冷却这一现象点出了人类社交生活中很有趣的一个特点，而这一点，大部分年轻人是不知道的。年轻人从学校跨入社会，读了一些商业杂志就认为自己知道了什么是生意，去参加了一些行业论坛就认为自己是行业专家。实际上，在这个世界上，真的有一些私下的封闭社团，一直存在着，只是你不知道。但如果你不知道，就永远不会知道，除非有人愿意带你往上走。&lt;/p&gt;
 &lt;p&gt;如果你希望一步步往上走，真正深入到最精英的团体中，而且很幸运的有人愿意带你，你会发现一步步都走的很累。你得牺牲下班后的时间，去参加各式各样的聚会，同各种各样的人进行所谓的“社交”，得到越来越多的机会。但是实际上，所谓机会，就是不确定的际遇。也许你会认识到对的人，这个对的人会给你带来更多的机会，如此反复。这个过程就像毒瘾，越玩越过瘾，越玩投入越大，直到为了这些所谓的“机会”，你把所有下班后的时间都投了进去，被压的喘不过气。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Jobs" src="./img/jobs.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Jobs" src="/static/images/2012/6/jobs.png" /&gt;&lt;/p&gt;
 &lt;p&gt;有那么一些人，选择了另外一条路。他们几乎彻底放弃了这些机会，把精力集中在工作中，专注于自己的产品，做到极致。如此一来，你得到的就不止是“机会”，而是“答案”。给出一个好的答案，其实要胜过很多华而不实的“机会”。&lt;/p&gt;
 &lt;p&gt;前几日在D10大会上，甲骨文的CEO，Larry Page谈到了自己的好朋友Steve Jobs。他们俩是邻居，俩人是三十多年的密友。很多人都希望能成为下一个Steve，Larry是怎么看的呢？“如果你想模仿Steve的穿衣风格这些表面的东西，那你就错了。Steve每天都穿一样的衣服，是因为他不想分心去想自己该穿什么。”在他眼里，Steve的个性是强迫人格和奇绝天才的结合。他说“如果你想知道自己有没有成为Steve的潜质，问问自己，如果工作中有什么没有解决的问题，你能分心去想别的事吗？”&lt;/p&gt;</summary><category term="social-network"></category></entry><entry><title>责任链模式</title><link href="http://guo-min-zhi.github.com/2012/May/13/chain-of-responsibility/" rel="alternate"></link><updated>2012-05-13T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-05-13:2012/May/13/chain-of-responsibility/</id><summary type="html">&lt;p&gt;什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
 使用责任链模式有什么好处呢？它实现了请求的发起者和请求的处理者之间的解耦，并且可以有多个处理者，只要将请求交给处理的起始者，该请求就一定会被处理。&lt;/p&gt;
 &lt;p&gt;下面是一个责任链模式的例子(from 《大话设计模式》):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="UseCaseModel" src="./img/UseCaseModel.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="UseCaseModel" src="/static/images/2012/5/UseCaseModel.png" /&gt;&lt;/p&gt;
 &lt;p&gt;管理者抽象类：
     using System;
     using System.Collections.Generic;

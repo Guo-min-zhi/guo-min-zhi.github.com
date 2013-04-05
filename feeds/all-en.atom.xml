@@ -7,18 +7,18 @@
 &lt;p&gt;2013年3月24号中午，我们便到达了吉首。在吉首的汽车站，我们坐上了去往凤凰的大巴，不到一个小时，便来到了这个美丽的小城。&lt;/p&gt;
 &lt;p&gt;在凤凰的三天时间里，我还真有一点喜欢上这里了。凤凰依山傍水，烟雨蒙蒙，风景甚是美丽。我们去了酒吧，逛了古街，玩了夜市，划了小船，看了篝火晚会，也安静地坐在阳台上，静静的看着沱江，从我们面前悄悄的流走。这一份静谧，在北京可是没有的。&lt;/p&gt;
 &lt;p&gt;凤凰的白天
-&lt;img alt="凤凰白天" src="./fenghuang02.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="凤凰白天" src="/static/images/2013/4/fenghuang02.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;凤凰的夜晚
-&lt;img alt="凤凰夜晚" src="fenghuang01.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="凤凰夜晚" src="/static/images/2013/4/fenghuang01.JPG" /&gt;&lt;/p&gt;
 &lt;h2&gt;张家界&lt;/h2&gt;
 &lt;p&gt;2013年3月26号下午，我们从凤凰转战到了张家界。来了张家界主要是体验大自然的伟大，赞叹我们的大自然如何能创造出这么奇异的山峰。来到张家界的第一个晚上，我竟然因为水土不服，发高烧了，还好带了退烧药，吃了药，在美女朋友的照顾下，睡去了。
 3月27号，高烧退去，收拾行李，我们要去爬天门山了！！这里的山不像泰山那样雄伟连绵，每一座山峰都笔挺直立，高耸如云。站在栈道上往下看，两腿发软。
-&lt;img alt="栈道" src="./tianmenshan01.jpg" /&gt;&lt;/p&gt;
+&lt;img alt="栈道" src="/static/images/2013/4/tianmenshan01.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;都说天门洞有999个台阶，我们两个人竟然相信了，还一边往山爬，一边数数，每数一百个台阶一起自拍一张。最后还是让我们失望了，根本没有999个，一共才880个台阶！
-&lt;img alt="天门洞" src="./tianmenshan02.jpg" /&gt;&lt;/p&gt;
+&lt;img alt="天门洞" src="/static/images/2013/4/tianmenshan02.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;3月28号，我们早早起床，动身前往武陵源国家森林公园。这里的山更高更挺，而且空气分外清新，没有PM2.5哈～～&lt;/p&gt;
 &lt;p&gt;我今天真的运气很不好，在金鞭溪玩水，竟然掉下去了，把鞋和裤子都湿了；在路上差点被野生猴子吓得半死。还好山景很好看，弥补了我受伤的心灵。
-&lt;img alt="武陵源国家森林公园" src="./wulinyuan.jpg" /&gt;&lt;/p&gt;
+&lt;img alt="武陵源国家森林公园" src="/static/images/2013/4/wulinyuan.JPG" /&gt;&lt;/p&gt;
 &lt;h2&gt;返京&lt;/h2&gt;
 &lt;p&gt;3月30号，休息了一上午的我们也收拾了行李，踏上了返京的火车。&lt;/p&gt;
 &lt;hr /&gt;
@@ -80,10 +80,10 @@
 &lt;p&gt;环境变量 -&amp;gt; 系统变量 -&amp;gt; 新建 -&amp;gt; M2_HOME (C:\Program Files\apache-maven-2.2.1)&lt;/p&gt;
 &lt;p&gt;环境变量 -&amp;gt; 系统变量 -&amp;gt; 找到Path -&amp;gt; 编辑 -&amp;gt; ;C:\Program Files\apache-maven-2.2.1&lt;/p&gt;
 &lt;p&gt;然后，打开命令提示符(cmd)，检查Maven环境是否配置成功：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="maven" src="./img/mvn.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="maven" src="/static/images/2012/10/mvn.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;3.  修改Maven仓库&lt;/h3&gt;
 &lt;p&gt;Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="maven1.png" src="./img/mvn1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="maven1.png" src="/static/images/2012/10/img/mvn1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;一般情况下使用默认的目录即可，如果想更改目录，直接修改&lt;localRepository&gt;标签中的内容即可。&lt;/p&gt;
 &lt;h3&gt;4. 创建Maven项目&lt;/h3&gt;
 &lt;p&gt;使用cmd进入相应的文件目录下，直接输入命令即可。&lt;/p&gt;
@@ -166,7 +166,7 @@
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="poj"></category><category term="数据结构"></category></entry><entry><title>纪念大学里最后一次小学期</title><link href="http://guo-min-zhi.github.com/2012/Jul/18/the-last-session-of-training/" rel="alternate"></link><updated>2012-07-18T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-07-18:2012/Jul/18/the-last-session-of-training/</id><summary type="html">&lt;p&gt;哈哈  为期二十天的大学最后一次小学期终于结束了，虽说这个小学期无比的让人蛋疼，但收获颇多。团队里的每一位成员都很认真负责，我们共同完成了两个比较艰巨的项目，在此先感谢之。&lt;/p&gt;
 &lt;p&gt;实训一：&lt;/p&gt;
 &lt;p&gt;今晚呢，又闲来无事，突发奇想的想要统计一下这个小学期完成的代码行数，所以下了一个SourceCounter。不看不知道，一看吓一跳，直接上图：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="a.png" src="./img/a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="a.png" src="/static/images/2012/7/a.png" /&gt;&lt;/p&gt;
 &lt;p&gt;仅仅一个“物流管理系统”的后台代码，竟然有五千多行，加上注释等乱七八糟的东西，都到一万六了。我都不知道这些都是从哪儿里来的。可见这个代码的书写真是烂透了。&lt;/p&gt;
 &lt;p&gt;这个“物流管理系统”，虽说看着简单，但通过这个项目，收获了很多：
 &lt;em&gt;   完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~
@@ -179,11 +179,11 @@
 &lt;/em&gt;   会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。
 *   要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。&lt;/p&gt;
 &lt;p&gt;哈哈，show一下代码，服务器端：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="b.png" src="./img/b.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="b.png" src="/static/images/2012/7/b.png" /&gt;&lt;/p&gt;
 &lt;p&gt;android端：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="c.png" src="./img/c.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="c.png" src="/static/images/2012/7/c.png" /&gt;&lt;/p&gt;
 &lt;p&gt;其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>社交网络中的“蒸发冷却效应”</title><link href="http://guo-min-zhi.github.com/2012/Jun/07/cooling-effect-of-social-network/" rel="alternate"></link><updated>2012-06-07T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-06-07:2012/Jun/07/cooling-effect-of-social-network/</id><summary type="html">&lt;p&gt;&lt;em&gt;From:  http://www.36kr.com/p/116366.html&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="social-network" src="./img/social_network1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="social-network" src="/static/images/2012/6/social_network1.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;那些最想去结交别人的人，往往是大家最不愿意去结交的人；&lt;/p&gt;
 &lt;p&gt;那些最想说出自己看法的人，往往是大家最不愿意听他说的人；&lt;/p&gt;
 &lt;p&gt;那些最想同别人交换名片保持联络的人，往往是大家最不希望拿出名片同他交换的人；&lt;/p&gt;
@@ -198,12 +198,12 @@
 &lt;p&gt;你猜对了，他们去了自己的封闭“私人”社团。在那儿，他们可以同跟自己水平相近的朋友进行真正的社交，比如开一个下午的专业研讨会没有几个人听得懂，于是来的人没有闲杂人等，不易发生“蒸发冷却”的惨剧。&lt;/p&gt;
 &lt;p&gt;蒸发冷却这一现象点出了人类社交生活中很有趣的一个特点，而这一点，大部分年轻人是不知道的。年轻人从学校跨入社会，读了一些商业杂志就认为自己知道了什么是生意，去参加了一些行业论坛就认为自己是行业专家。实际上，在这个世界上，真的有一些私下的封闭社团，一直存在着，只是你不知道。但如果你不知道，就永远不会知道，除非有人愿意带你往上走。&lt;/p&gt;
 &lt;p&gt;如果你希望一步步往上走，真正深入到最精英的团体中，而且很幸运的有人愿意带你，你会发现一步步都走的很累。你得牺牲下班后的时间，去参加各式各样的聚会，同各种各样的人进行所谓的“社交”，得到越来越多的机会。但是实际上，所谓机会，就是不确定的际遇。也许你会认识到对的人，这个对的人会给你带来更多的机会，如此反复。这个过程就像毒瘾，越玩越过瘾，越玩投入越大，直到为了这些所谓的“机会”，你把所有下班后的时间都投了进去，被压的喘不过气。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Jobs" src="./img/jobs.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Jobs" src="/static/images/2012/6/jobs.png" /&gt;&lt;/p&gt;
 &lt;p&gt;有那么一些人，选择了另外一条路。他们几乎彻底放弃了这些机会，把精力集中在工作中，专注于自己的产品，做到极致。如此一来，你得到的就不止是“机会”，而是“答案”。给出一个好的答案，其实要胜过很多华而不实的“机会”。&lt;/p&gt;
 &lt;p&gt;前几日在D10大会上，甲骨文的CEO，Larry Page谈到了自己的好朋友Steve Jobs。他们俩是邻居，俩人是三十多年的密友。很多人都希望能成为下一个Steve，Larry是怎么看的呢？“如果你想模仿Steve的穿衣风格这些表面的东西，那你就错了。Steve每天都穿一样的衣服，是因为他不想分心去想自己该穿什么。”在他眼里，Steve的个性是强迫人格和奇绝天才的结合。他说“如果你想知道自己有没有成为Steve的潜质，问问自己，如果工作中有什么没有解决的问题，你能分心去想别的事吗？”&lt;/p&gt;</summary><category term="social-network"></category></entry><entry><title>责任链模式</title><link href="http://guo-min-zhi.github.com/2012/May/13/chain-of-responsibility/" rel="alternate"></link><updated>2012-05-13T00:00:00+08:00</updated><author><name>Guominzhi</name></author><id>tag:guo-min-zhi.github.com,2012-05-13:2012/May/13/chain-of-responsibility/</id><summary type="html">&lt;p&gt;什么情况下使用责任链模式呢？对于一个请求，有多个需要处理它的对象，并且这些处理对象之间是有顺序的，此时我们应该想到要用责任链模式(Chain of Responsbility)。
 使用责任链模式有什么好处呢？它实现了请求的发起者和请求的处理者之间的解耦，并且可以有多个处理者，只要将请求交给处理的起始者，该请求就一定会被处理。&lt;/p&gt;
 &lt;p&gt;下面是一个责任链模式的例子(from 《大话设计模式》):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="UseCaseModel" src="./img/UseCaseModel.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="UseCaseModel" src="/static/images/2012/5/UseCaseModel.png" /&gt;&lt;/p&gt;
 &lt;p&gt;管理者抽象类：
     using System;
     using System.Collections.Generic;
