@@ -83,7 +83,7 @@
 &lt;p&gt;&lt;img alt="maven" src="/static/images/2012/10/mvn.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;3.  修改Maven仓库&lt;/h3&gt;
 &lt;p&gt;Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="maven1.png" src="/static/images/2012/10/img/mvn1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="maven1.png" src="/static/images/2012/10/mvn1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;一般情况下使用默认的目录即可，如果想更改目录，直接修改&lt;localRepository&gt;标签中的内容即可。&lt;/p&gt;
 &lt;h3&gt;4. 创建Maven项目&lt;/h3&gt;
 &lt;p&gt;使用cmd进入相应的文件目录下，直接输入命令即可。&lt;/p&gt;
