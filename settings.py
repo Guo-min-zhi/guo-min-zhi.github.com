@@ -31,7 +31,7 @@ OUTPUT_PATH = '.'
 
 PATH = 'md-blog'
 
-THEME='./pelican-themes/tuxlite_tbs'
+THEME='pelican-themes/tuxlite_tbs'
 
 LINKS = (
     ('天堂皓月', 'http://hackecho.com/'),
