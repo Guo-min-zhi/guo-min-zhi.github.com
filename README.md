@@ -1,4 +1,4 @@
-dbyll
+My new blog thanks to dbyll
 =====
 
 Open source stylish, minimalistic theme for jekyll.  
