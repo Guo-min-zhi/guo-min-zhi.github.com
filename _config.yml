@@ -28,6 +28,6 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 project_path: projects.html
-leetcode_path: leetcode.html
+leetcode_path: leetcode
 
 BASE_PATH:

@@ -81,10 +81,10 @@ article .share .gplus:hover {
 	padding-bottom: 10px;
 }
 
-.page-header {
+/*.page-header {
 	color: #e74c3c;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
-}
+}*/
 
 article{
 	margin-bottom: 40px;
@@ -186,8 +186,12 @@ ul.dropdown-menu>li>a>i.fa {
 
 .content-wrapper__inner {
 	min-height: 500px;
-margin: 0 10%;
-padding: 50px 0;
+	margin: 0 10%;
+	padding: 50px 0;
+}
+.content-wrapper-leetcode{
+	min-height: 500px;
+	margin: 0 10%;
 }
 .post-list {
 margin: 0;
