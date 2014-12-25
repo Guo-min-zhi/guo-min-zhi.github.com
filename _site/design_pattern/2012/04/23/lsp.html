@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Guo-min-zhi</title>
+	<title>Liskov substitution principle</title>
 	
 	<meta name="author" content="Guo-min-zhi">
 
@@ -140,217 +140,110 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
-		<!-- <div class="page-header">
-  <h1>Guo-min-zhi </h1>
+		<div class="page-header">
+  <h1>Liskov substitution principle </h1>
 </div>
- -->
-<div class="content-wrapper__inner">
-  <div class="main-post-list">
-    <ol class="post-list">
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/java/2012/12/28/java-send-http-request.html">Java send http get post request</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              December
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/maven/java/2012/10/28/maven-tutorial.html">Maven Tutorial</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              October
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/07/18/the-last-session-of-training.html">纪念大学里最后一次小学期</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              July
-              18th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/05/13/chain-of-responsibility.html">Chain of responsibility</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              13th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/.net/2012/05/10/asp.net-view-state.html">ASP.NET view state</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              10th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/23/lsp.html">Liskov substitution principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              23rd,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/20/open-closed-principle.html">Open-Closed principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              20th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/19/single-responsibility-principle.html">Single Responsibility Principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              19th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/03/25/a-memorable-day.html">A memorable day</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              March
-              25th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-    </ol>
-  </div>
-</div>
+	
+<article>
 
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   23rd,
+	     
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>首先让我们来感谢一下Barbara Liskov，提出了关于继承的原则：Inheritance should ensure that any property proved about supertype objects also holds for subtype objects（继承必须确保超类中所拥有的性质在子类中仍然成立）。</p>
 
+<p>然后我们来说里氏替换原则，Liskov Substitution Principle。其核心思想就是：子类型必须能够替换他们的父类型。在软件设计中，凡是父类出现的地方，用子类进行替换之后，软件本身并不受到影响。其实，正是由于子类的可替换性，使得父类模块可以在不进行修改的情况下进行扩展。</p>
 
+<p>这应该是我们学习面向对象语言时就应该有深刻理解的，在设计时，遵循这条原则，可以使我们的父类与子类之间的继承关系更加优美，为我们之后的扩展与维护带来方便。</p>
 
-<!-- <div class="page-header">
-  <h2>
-    <a href=""></a>
-  </h2>
-  <small>
-      <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
-  </small>
-</div> -->
+	  </div>
 
-<!-- <article class="home">
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
 
-  <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
 
-  <h2>
-    <a href=""></a>
-  </h2>
+		<hr>
 
-  <div>
-    
-    
-    
-    
-    
-  </div>
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Liskov substitution principle"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
 
-</article> -->
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Guo-min-zhi</h4>
+        <p class="author-bio">Stay hungry, stay foolish!</p>
+      </section>
+    </div>
 
-<hr/>
+    <div class="clearfix"></div>
 
-<ul class="pager"> 
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/design_pattern/2012/04/20/open-closed-principle.html" title="Open-Closed principle">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/.net/2012/05/10/asp.net-view-state.html" title="ASP.NET view state">Next &rarr;</a></li>
+		  
+		</ul>
 
-  
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  
-  
-  <li>
-    <span class="page_number">Page: 1 of 1</span>
-  </li>
-
-  
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  
-
-</ul>
-
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
 
 
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Maven Tutorial</title>
+	<title>纪念大学里最后一次小学期</title>
 	
 	<meta name="author" content="Guo-min-zhi">
 
@@ -141,7 +141,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>Maven Tutorial </h1>
+  <h1>纪念大学里最后一次小学期 </h1>
 </div>
 	
 <article>
@@ -149,59 +149,51 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	   October 
-	   28th,
+	   July 
+	   18th,
 	   
 	   2012
 	 </span>
 	  <div class="article_body">
-	  <p>如何在windows环境下快速搭建maven项目：</p>
+	  <p>哈哈  为期二十天的大学最后一次小学期终于结束了，虽说这个小学期无比的让人蛋疼，但收获颇多。团队里的每一位成员都很认真负责，我们共同完成了两个比较艰巨的项目，在此先感谢之。</p>
 
-<h3 id="maven">1. 下载maven</h3>
+<h3 id="section">实训一：</h3>
 
-<p>解压到C:\Program Files\apache-maven-2.2.1</p>
+<p>今晚呢，又闲来无事，突发奇想的想要统计一下这个小学期完成的代码行数，所以下了一个SourceCounter。不看不知道，一看吓一跳，直接上图：</p>
 
-<h3 id="maven-1">2. 配置Maven环境</h3>
+<p><img src="/assets/img/a.png" alt="a.png" /></p>
 
-<p>环境变量 -&gt; 系统变量 -&gt; 新建 -&gt; M2_HOME (C:\Program Files\apache-maven-2.2.1)</p>
+<p>仅仅一个“物流管理系统”的后台代码，竟然有五千多行，加上注释等乱七八糟的东西，都到一万六了。我都不知道这些都是从哪儿里来的。可见这个代码的书写真是烂透了。</p>
 
-<p>环境变量 -&gt; 系统变量 -&gt; 找到Path -&gt; 编辑 -&gt; ;C:\Program Files\apache-maven-2.2.1</p>
+<p>这个“物流管理系统”，虽说看着简单，但通过这个项目，收获了很多：</p>
 
-<p>然后，打开命令提示符(cmd)，检查Maven环境是否配置成功：</p>
+<ul>
+  <li>完整的接触了Spring，独立地给出了一个SSH的架构，很是欣慰啊~~</li>
+  <li>这种看似技术简单的商业项目，其业务逻辑真的很是复杂。关于“车辆管理”、“路线管理”这些部分的业务逻辑，到现在都还不知道怎么解决。</li>
+  <li>需求真的真的很重要。由于我的原因，项目一开始的时候就不是很重视需求，所以在需求分析阶段，大家草草了之。但之后问题便来了。由于大家对需求不是很清楚，在项目进行的阶段，总是开各种小会，大家一起明确需求，然后才能进行编码。真的很伤神啊！！</li>
+</ul>
 
-<p><img src="/assets/img/mvn.png" alt="maven" /></p>
+<h3 id="section-1">实训二：</h3>
 
-<h3 id="maven-2">3.  修改Maven仓库</h3>
+<p>实训的后十天，我们要搞一个“基于android+SSH的旅游社交软件”。android从来没搞过啊，还是蛮吓人的。但SSH之前已经很熟悉了。所以，我先给大家搭了一个SSH的后台框架，与此同时给大家一些时间去学习android。中期进展还算顺利，但到了后期，一些组员的进度落下了，并且在项目合并的时候花了很大一部分时间，导致我连刷两夜，伤不起啊！</p>
 
-<p>Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。</p>
+<p>不过，有收获就好：</p>
 
-<p><img src="/assets/img/mvn1.png" alt="maven1.png" /></p>
+<ul>
+  <li>接触了android，首先感觉它很容易上手，但做完了之后才发现，自己做的东西真心好慢啊。android手机的内存是有限的，学会高效地管理内存，才能做出高效地软件。</li>
+  <li>会合理分配任务的组长才是合格的组长。要合理的分配任务，首先要对整个项目的架构有清晰的认识，其次，要对每一位团队成员的实力以及长处有所了解。这样才能让每一个人发挥最大的效果。</li>
+  <li>要随时把握项目的进度，随时了解组员任务的进展程度，千万不能对组员不管不问，等到项目快要结束时才要求提交成果物。如果到那时候组员说“我尽力了，但还是没有完成”，你就只能拿头撞墙了。</li>
+</ul>
 
-<p>一般情况下使用默认的目录即可，如果想更改目录，直接修改<localrepository>标签中的内容即可。</localrepository></p>
+<p>哈哈，show一下代码，服务器端：</p>
 
-<h3 id="maven-3">4. 创建Maven项目</h3>
+<p><img src="/assets/img/b.png" alt="b.png" /></p>
 
-<p>使用cmd进入相应的文件目录下，直接输入命令即可。</p>
+<p>android端：</p>
 
-<p>创建普通项目：mvn archetype:generate -DgroupId=com.maven.test -DartifactId=hello -DpackageName=com.maven.test -Dversion=1.0</p>
+<p><img src="/assets/img/c.png" alt="c.png" /></p>
 
-<p>创建web项目：mvn archetype:generate -DgroupId=com.maven.test -DartifactId=mywebapps  -DarchetypeArtifactId=maven-archetype-webapp -Dversion=1.0</p>
-
-<h3 id="section">5. 编译项目</h3>
-
-<p>在命令提示符下，进入我们创建的项目目录，mvn clean compile，进行编译。使用mvn eclipse:eclipse 生成eclipse的目录结构。</p>
-
-<h3 id="eclipse">6. 导入eclipse</h3>
-
-<p>打开eclipse工具，需要先配置一下maven仓库的路径：</p>
-
-<p>Window -&gt; Preferences -&gt; Java  -&gt; Build Path -&gt; Classpath Variables -&gt; New -&gt; Name : M2_REPO -&gt; Path : C:\Users\Guo.m2\repository</p>
-
-<p>我的仓库路径是默认的。</p>
-
-<hr />
-
-<p>接着import一下项目就可以了。</p>
+<p>其实，到此为止，自己的大学生活可以画上了一个“分号”。因为即将到来的大四生活，与之前的大学生活将会截然不同，没有无聊的课程，我们会去实习，会去出国，会去追求我们的梦想。加油吧，一起向前冲~~</p>
 
 	  </div>
 
@@ -211,13 +203,8 @@
 		  
 		  
 			 
-				<li><a href="/categories.html#maven-ref">
-					maven <span>(1)</span>
-					,
-				</a></li>
-			 
-				<li><a href="/categories.html#java-ref">
-					java <span>(2)</span>
+				<li><a href="/categories.html#life-ref">
+					life <span>(2)</span>
 					
 				</a></li>
 			
@@ -232,15 +219,8 @@
 		  
 			 
 				<li>
-					<a href="/tags.html#maven-ref">
-					maven <span>(1)</span>
-					,
-					</a>
-				</li>
-			 
-				<li>
-					<a href="/tags.html#java-ref">
-					java <span>(2)</span>
+					<a href="/tags.html#life-ref">
+					life <span>(2)</span>
 					
 					</a>
 				</li>
@@ -255,7 +235,7 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Maven Tutorial"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=纪念大学里最后一次小学期"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -283,10 +263,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous"><a href="/life/2012/07/18/the-last-session-of-training.html" title="纪念大学里最后一次小学期">&larr; Previous</a></li>
+		  <li class="previous"><a href="/design_pattern/2012/05/13/chain-of-responsibility.html" title="Chain of responsibility">&larr; Previous</a></li>
 		  
 		  
-		  <li class="next"><a href="/java/2012/12/28/java-send-http-request.html" title="Java send http get post request">Next &rarr;</a></li>
+		  <li class="next"><a href="/maven/java/2012/10/28/maven-tutorial.html" title="Maven Tutorial">Next &rarr;</a></li>
 		  
 		</ul>
 

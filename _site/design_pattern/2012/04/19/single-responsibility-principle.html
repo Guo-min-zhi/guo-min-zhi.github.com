@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Guo-min-zhi</title>
+	<title>Single Responsibility Principle</title>
 	
 	<meta name="author" content="Guo-min-zhi">
 
@@ -140,217 +140,116 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
-		<!-- <div class="page-header">
-  <h1>Guo-min-zhi </h1>
+		<div class="page-header">
+  <h1>Single Responsibility Principle </h1>
 </div>
- -->
-<div class="content-wrapper__inner">
-  <div class="main-post-list">
-    <ol class="post-list">
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/java/2012/12/28/java-send-http-request.html">Java send http get post request</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              December
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/maven/java/2012/10/28/maven-tutorial.html">Maven Tutorial</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              October
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/07/18/the-last-session-of-training.html">纪念大学里最后一次小学期</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              July
-              18th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/05/13/chain-of-responsibility.html">Chain of responsibility</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              13th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/.net/2012/05/10/asp.net-view-state.html">ASP.NET view state</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              10th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/23/lsp.html">Liskov substitution principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              23rd,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/20/open-closed-principle.html">Open-Closed principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              20th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/19/single-responsibility-principle.html">Single Responsibility Principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              19th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/03/25/a-memorable-day.html">A memorable day</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              March
-              25th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-    </ol>
-  </div>
-</div>
+	
+<article>
 
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   19th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>呵呵 其实从很早之前就开始接触设计模式了，但一直没有加以认真的思考，所以对于“设计模式”这个概念只能说是一知半解，并没有自己深入的理解。最近下定决心，开始要认真的学习设计模式了。</p>
 
+<p>这里只是我对于设计模式的一些自己的理解，并不具有权威性哈~~</p>
 
+<p>让我们先从面向对象设计模式的五大原则说起吧。</p>
 
-<!-- <div class="page-header">
-  <h2>
-    <a href=""></a>
-  </h2>
-  <small>
-      <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
-  </small>
-</div> -->
+<p>我们最先接触的应该就是“单一职责原则-Single Responsibility Principle”了吧。这应该是最好理解的一个基本原则了。什么意思呢？就是说“对于一个类来讲，应该只有一个引起它变化的原因”，换句话讲就是每一个类应该功能单一、不应该承担过多的职责。为什么呢？因为如果一个类承担的职责过多，就等于把这些职责耦合在一起了，一个职责的变化很有可能抑制或者削弱这个类完成其他职责的能力。并且当其中的一个职责发生变化时，很可能会导致其他的职责也发生变化，这将导致整个设计的耦合性变高、可维护性变差、可复用性变差、灵活性变差等一系列缺点。</p>
 
-<!-- <article class="home">
+<p>其实，单一职责原则在我们生活中的应用比比皆是。例如：一个人在工作中不能承担太多的任务，否则每一项任务都可能完成不好。还有那种集各种功能于一身的手机，结果就是照相时像素不高、听音乐时音质太差，不可能每一项功能都十分出色。</p>
 
-  <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
+<p>所以说，在平时的工作生活中，我们也应该将单一职责原则用到自己身上来，不要总是手里做着一件事、心里还想着另外一件事，结果每件事都没有完成。最好就是脚踏实地，完成一步再去迈出下一步。</p>
 
-  <h2>
-    <a href=""></a>
-  </h2>
+	  </div>
 
-  <div>
-    
-    
-    
-    
-    
-  </div>
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
 
-</article> -->
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
 
-<hr/>
+		<hr>
 
-<ul class="pager"> 
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Single Responsibility Principle"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
 
-  
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  
-  
-  <li>
-    <span class="page_number">Page: 1 of 1</span>
-  </li>
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Guo-min-zhi</h4>
+        <p class="author-bio">Stay hungry, stay foolish!</p>
+      </section>
+    </div>
 
-  
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  
+    <div class="clearfix"></div>
 
-</ul>
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/life/2012/03/25/a-memorable-day.html" title="A memorable day">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/design_pattern/2012/04/20/open-closed-principle.html" title="Open-Closed principle">Next &rarr;</a></li>
+		  
+		</ul>
 
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
 
 
 

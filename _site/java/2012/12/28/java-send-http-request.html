@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Java send http get post request</title>
+	
+	<meta name="author" content="Guo-min-zhi">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/Guo-min-zhi">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:shouwang411@126.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b?s=35" class="img-circle" />
+				Oliver Guo
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/projects.html"><i class="fa fa-bar-chart-o"></i>Project</a></li>
+			<li><a href="/leetcode"><i class="fa fa-flag"></i>LeetCode</a></li>
+			<!-- <li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li> -->
+			<li><a href="/about"><i class="fa fa-tags"></i>About</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs">
+		<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Oliver Guo</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Stay hungry, stay foolish!
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/Guo-min-zhi">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://cn.linkedin.com/in/minzhiguo">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:shouwang411@126.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<! -- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Java send http get post request </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   December 
+	   28th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>最近，公司的一个项目需要拿到第三方项目的数据，我们解决的大致思路就是Java发送HTTP GET POST请求，得到页面数据之后，用jsoup进行解析，然后入库。由于这个第三方项目需要登录，所以，我们第一次登陆请求进去之后，需要记录下cookie，下次发送请求的时候，直接把这个cookie放到header里就可以了。</p>
+
+<p>发送GET请求：</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">URL</span><span class="o">(</span><span class="s">&quot;URL链接&quot;</span><span class="o">);</span>
+<span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">connection</span><span class="o">.</span><span class="na">setRequestProperty</span><span class="o">(</span><span class="s">&quot;Connection&quot;</span><span class="o">,</span> <span class="s">&quot;Keep-Alive&quot;</span><span class="o">);</span>
+<span class="n">String</span> <span class="n">returnCookie</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">getHeaderField</span><span class="o">(</span><span class="s">&quot;Set-Cookie&quot;</span><span class="o">);</span>
+<span class="n">String</span> <span class="n">cookie</span> <span class="o">=</span> <span class="n">returnCookie</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">returnCookie</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">&quot;;&quot;</span><span class="o">));</span> <span class="c1">//取得cookie</span></code></pre></div>
+
+<p>发送POST请求：</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">URL</span><span class="o">(</span><span class="s">&quot;URL链接&quot;</span><span class="o">);</span>
+<span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">connection</span><span class="o">.</span><span class="na">setRequestProperty</span><span class="o">(</span><span class="s">&quot;Connection&quot;</span><span class="o">,</span> <span class="s">&quot;Keep-Alive&quot;</span><span class="o">);</span>
+<span class="n">connection</span><span class="o">.</span><span class="na">setRequestProperty</span><span class="o">(</span><span class="s">&quot;cookie&quot;</span><span class="o">,</span> <span class="n">cookie</span><span class="o">);</span>   <span class="c1">//设置cookie</span>
+<span class="n">connection</span><span class="o">.</span><span class="na">setDoOutput</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>  <span class="c1">//post方法必须设置</span>
+<span class="n">OutputStreamWriter</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">OutputStreamWriter</span><span class="o">(</span><span class="n">connection</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">());</span>
+<span class="n">String</span> <span class="n">queryString</span> <span class="o">=</span> <span class="s">&quot;post提交的拼接字符串&quot;</span><span class="o">;</span>
+<span class="n">writer</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">queryString</span><span class="o">);</span>
+<span class="n">writer</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+<span class="n">writer</span><span class="o">.</span><span class="na">close</span><span class="o">();</span></code></pre></div>
+
+<p>发送请求过去之后，我们需要拿到服务器返回的数据：</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">oneLine</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">response</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">;</span>
+<span class="n">InputStream</span> <span class="n">input</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
+<span class="n">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">input</span><span class="o">));</span>
+<span class="c1">//将内容写入到文件</span>
+<span class="n">FileOutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">FileOutputStream</span><span class="o">(</span><span class="k">new</span> <span class="nf">File</span><span class="o">(</span><span class="s">&quot;F:/log.txt&quot;</span><span class="o">));</span>  
+<span class="k">while</span><span class="o">((</span><span class="n">oneLine</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">readLine</span><span class="o">())!=</span><span class="kc">null</span><span class="o">){</span>
+    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">((</span><span class="n">oneLine</span><span class="o">+</span><span class="s">&quot;\r\n&quot;</span><span class="o">).</span><span class="na">getBytes</span><span class="o">());</span>
+    <span class="n">response</span> <span class="o">+=</span> <span class="n">oneLine</span> <span class="o">+</span> <span class="s">&quot;\r\n&quot;</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">response</span><span class="o">);</span></code></pre></div>
+
+<p>这样我们就得到了第三方项目的数据，接下来只需要用jsoup解析数据，把我们想要的东西下来即可~~</p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#java-ref">
+					java <span>(2)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#java-ref">
+					java <span>(2)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#http-ref">
+					http <span>(1)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Java send http get post request"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Guo-min-zhi</h4>
+        <p class="author-bio">Stay hungry, stay foolish!</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/maven/java/2012/10/28/maven-tutorial.html" title="Maven Tutorial">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2014 Guo-min-zhi with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+

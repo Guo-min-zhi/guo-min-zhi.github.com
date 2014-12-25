@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Guo-min-zhi</title>
+	<title>Open-Closed principle</title>
 	
 	<meta name="author" content="Guo-min-zhi">
 
@@ -140,217 +140,114 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
-		<!-- <div class="page-header">
-  <h1>Guo-min-zhi </h1>
+		<div class="page-header">
+  <h1>Open-Closed principle </h1>
 </div>
- -->
-<div class="content-wrapper__inner">
-  <div class="main-post-list">
-    <ol class="post-list">
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/java/2012/12/28/java-send-http-request.html">Java send http get post request</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              December
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/maven/java/2012/10/28/maven-tutorial.html">Maven Tutorial</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              October
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/07/18/the-last-session-of-training.html">纪念大学里最后一次小学期</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              July
-              18th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/05/13/chain-of-responsibility.html">Chain of responsibility</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              13th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/.net/2012/05/10/asp.net-view-state.html">ASP.NET view state</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              May
-              10th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/23/lsp.html">Liskov substitution principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              23rd,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/20/open-closed-principle.html">Open-Closed principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              20th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/design_pattern/2012/04/19/single-responsibility-principle.html">Single Responsibility Principle</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              April
-              19th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/life/2012/03/25/a-memorable-day.html">A memorable day</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              March
-              25th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-    </ol>
-  </div>
-</div>
+	
+<article>
 
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   20th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>今天就来说一说这个“开放封闭原则-Open Closed Principle”。</p>
 
+<p>OCP应该说是面向对象设计原则的核心了，因为我们做的一切都是为了这个目的。那说到底OCP是个什么意思呢？其实很简单，就是“对扩展应该开放，对修改应该关闭”。即我们设计出来的软件，如果出于需求的原因要增加功能，那么我们不应该去修改原来的代码，而是应该思考在原来的代码的基础上增加类或者模块去实现这个需求。</p>
 
+<p>有人可能要问了，为什么偏偏不能修改原来的代码呢？哈哈 这就要回到我们面向对象设计的原则了。我们为什么要采用面向对象设计的思想？就是为了设计出来的软件易维护、易扩展、易复用、灵活性高。如果每次改变需求、增加功能的时候都要先去读懂原来的代码，然后再去修改原来的代码，这是相当麻烦的。要知道，你所维护的项目代码很可能不是出自你自己的手，所以维护的成本非常地高。</p>
 
-<!-- <div class="page-header">
-  <h2>
-    <a href=""></a>
-  </h2>
-  <small>
-      <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
-  </small>
-</div> -->
+<p>那么，我们在项目中如何去实现OCP原则呢？首先，在项目开始前，我们应该尽最大可能去充分地理解项目的需求，避免项目后期需求出现较大的变动。其次，我们应该尽量去采用一些成熟的适合的设计模式。要知道，完全符合OCP原则的项目几乎是不存在的，只能说是尽量地去符合OCP。</p>
 
-<!-- <article class="home">
+<p>好吧 就先说到这里吧 今后有新的理解的时候再补上~~</p>
 
-  <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
+	  </div>
 
-  <h2>
-    <a href=""></a>
-  </h2>
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
 
-  <div>
-    
-    
-    
-    
-    
-  </div>
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#design_pattern-ref">
+					design_pattern <span>(4)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
 
-</article> -->
+		<hr>
 
-<hr/>
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Open-Closed principle"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
 
-<ul class="pager"> 
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Guo-min-zhi</h4>
+        <p class="author-bio">Stay hungry, stay foolish!</p>
+      </section>
+    </div>
 
-  
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  
-  
-  <li>
-    <span class="page_number">Page: 1 of 1</span>
-  </li>
+    <div class="clearfix"></div>
 
-  
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/design_pattern/2012/04/19/single-responsibility-principle.html" title="Single Responsibility Principle">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/design_pattern/2012/04/23/lsp.html" title="Liskov substitution principle">Next &rarr;</a></li>
+		  
+		</ul>
 
-</ul>
-
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
 
 
 

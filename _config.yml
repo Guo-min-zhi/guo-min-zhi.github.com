@@ -29,5 +29,6 @@ categories_path: categories.html
 tags_path: tags.html
 project_path: projects.html
 leetcode_path: leetcode
+about_path: about
 
 BASE_PATH:
