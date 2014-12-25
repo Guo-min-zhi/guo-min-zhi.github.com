@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Guo-min-zhi</title>
+	<title>Maven Tutorial</title>
 	
 	<meta name="author" content="Guo-min-zhi">
 
@@ -139,157 +139,158 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
-		<!-- <div class="page-header">
-  <h1>Guo-min-zhi </h1>
+		<div class="page-header">
+  <h1>Maven Tutorial </h1>
 </div>
- -->
-<div class="content-wrapper__inner">
-  <div class="main-post-list">
-    <ol class="post-list">
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/general/setup/demo/2013/11/15/hello-world.html">Hello World!</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              November
-              15th,
-              
-              2013
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/general/setup/demo/2013/11/15/configuration.html">Configuration</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              November
-              15th,
-              
-              2013
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/general/demo/sample/2013/11/14/sample-2.html">Sample 2</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              November
-              14th,
-              
-              2013
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/general/demo/2013/11/14/sample.html">Sample</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              November
-              14th,
-              
-              2013
-            </time>
-          </div>  
-        </li>
-      
-        <li>
-          <h2 class="post-list__post-title post-title">
-            <a href="/maven/java/2012/10/28/maven-tutorial.html">Maven Tutorial</a>
-          </h2>
-          <div class="post-list__meta">
-            <time class="post-list__meta--date date">
-              
-              October
-              28th,
-              
-              2012
-            </time>
-          </div>  
-        </li>
-      
-    </ol>
-  </div>
-</div>
+	
+<article>
 
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   October 
+	   28th,
+	   
+	   2012
+	 </span>
+	  <div class="article_body">
+	  <p>如何在windows环境下快速搭建maven项目：
+### 1. 下载maven</p>
 
+<p>解压到C:\Program Files\apache-maven-2.2.1
+### 2. 配置Maven环境</p>
 
+<p>环境变量 -&gt; 系统变量 -&gt; 新建 -&gt; M2_HOME (C:\Program Files\apache-maven-2.2.1)</p>
 
-<!-- <div class="page-header">
-  <h2>
-    <a href=""></a>
-  </h2>
-  <small>
-      <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
-  </small>
-</div> -->
+<p>环境变量 -&gt; 系统变量 -&gt; 找到Path -&gt; 编辑 -&gt; ;C:\Program Files\apache-maven-2.2.1</p>
 
-<!-- <article class="home">
+<p>然后，打开命令提示符(cmd)，检查Maven环境是否配置成功：</p>
 
-  <span class="post-date">
-    
-    
-    0th,
-    
-    
-  </span>
+<p><img src="/assets/img/mvn.png" alt="maven" />
+### 3.  修改Maven仓库</p>
 
-  <h2>
-    <a href=""></a>
-  </h2>
+<p>Maven仓库用于存放我们在项目中用到的所有jar包，其配置在conf目录下的settings.xml文件中。</p>
 
-  <div>
-    
-    
-    
-    
-    
-  </div>
+<p><img src="/assets/img/mvn1.png" alt="maven1.png" /></p>
 
-</article> -->
+<p>一般情况下使用默认的目录即可，如果想更改目录，直接修改<localrepository>标签中的内容即可。
+### 4. 创建Maven项目</localrepository></p>
 
-<hr/>
+<p>使用cmd进入相应的文件目录下，直接输入命令即可。</p>
 
-<ul class="pager"> 
+<p>创建普通项目：mvn archetype:generate -DgroupId=com.maven.test -DartifactId=hello -DpackageName=com.maven.test -Dversion=1.0</p>
 
-  
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  
-  
-  <li>
-    <span class="page_number">Page: 1 of 1</span>
-  </li>
+<p>创建web项目：mvn archetype:generate -DgroupId=com.maven.test -DartifactId=mywebapps  -DarchetypeArtifactId=maven-archetype-webapp -Dversion=1.0
+### 5. 编译项目</p>
 
-  
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  
+<p>在命令提示符下，进入我们创建的项目目录，mvn clean compile，进行编译。使用mvn eclipse:eclipse 生成eclipse的目录结构。
+### 6. 导入eclipse</p>
 
-</ul>
+<p>打开eclipse工具，需要先配置一下maven仓库的路径：</p>
 
+<p>Window -&gt; Preferences -&gt; Java  -&gt; Build Path -&gt; Classpath Variables -&gt; New -&gt; Name : M2_REPO -&gt; Path : C:\Users\Guo.m2\repository</p>
+
+<p>我的仓库路径是默认的。</p>
+
+<hr />
+
+<p>接着import一下项目就可以了。</p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#maven-ref">
+					maven <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#java-ref">
+					java <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#maven-ref">
+					maven <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#java-ref">
+					java <span>(1)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Maven Tutorial"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/99d040eda18c9d030ea76d918ddfda4b" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Guo-min-zhi</h4>
+        <p class="author-bio">Stay hungry, stay foolish!</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/general/demo/2013/11/14/sample.html" title="Sample">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
 
 
 

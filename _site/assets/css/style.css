@@ -1,7 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
 body{
-	color: #2c3e50;
+	font-family: "Raleway", sans-serif;
+	font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	color: #666666;
 }
 
 .sidebar {
@@ -140,7 +143,7 @@ article.home h4 a:hover {
 
 footer {
 	padding-top: 15px;
-	font-family: 'Ubuntu';
+	/*font-family: 'Ubuntu';*/
 }
 
 /* nav-vertical-tabs component */
