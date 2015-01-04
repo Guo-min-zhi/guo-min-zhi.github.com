@@ -27,7 +27,7 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-project_path: projects.html
+project_path: projects
 leetcode_path: leetcode
 about_path: about
 
